@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ressources/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../ressources/css/main.css">
+    <link rel="stylesheet" media="screen and ((max-width: 700px) or (pointer:coarse))" href="../ressources/css/main-mobile.css">
+    <link rel="stylesheet" href="../ressources/css/leaderboard.css">
+	<script src="../ressources/js/main.js" defer></script>
+    <title>Classement DemonList - GDFR Leaderboard</title>
+</head>
+
+<body>
+
+    <header>
+        <a id="titre" href="../">GDFR Leaderboard</a>
+        <div class="mobile" id="dropButton"><i class="fa-solid fa-bars" style="color: white;"></i></div>
+        <nav id="nav">
+            <ul>
+                <li><a href="../">Accueil</a></li>
+                <li id="menuStats">
+                    <a>Stats</a>
+                    <ul>
+                        <li><a href="../stats/">Players</a></li>
+                        <li><a href="../stats/demonlist">DemonList</a></li>
+                        <li><a href="../stats/moderators">Mods</a></li>
+                    </ul>
+                </li>
+                <li id="menuLeaderborad">
+                    <a>Leaderboard</a>
+                    <ul>
+                        <li><a href="./stars">Stars</a></li>
+                        <li><a href="./diamonds">Diamonds</a></li>
+                        <li><a href="./secret-coins">Secret Coins</a></li>
+                        <li><a href="./user-coins">User Coins</a></li>
+                        <li><a href="./demons">Demons</a></li>
+                        <li><a href="./cp">Creator Points</a></li>
+                        <li><a href="./demonlist">DemonList</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Classement de la DemonList</h1>
+
+    <table class="demonlist">
+        <tr>
+            <th style="width: 10%;">Rang</th>
+            <th style="width: 30%;">Nom</th>
+            <th style="width: 30%;">Points</th>
+            <th style="width: 30%;">Hardest</th>
+        </tr>
+		<tr>
+			<td id="first">1</td>
+			<td>BoodBdog</td>
+			<td>1487.09</td>
+			<td>Hard Machine [19]</td>
+		</tr>
+		<tr>
+			<td id="second">2</td>
+			<td>Litoks</td>
+			<td>1313.29</td>
+			<td>Tartarus [23]</td>
+		</tr>
+		<tr>
+			<td id="third">3</td>
+			<td>nei</td>
+			<td>1187.59</td>
+			<td>Shukketsu [30]</td>
+		</tr>
+		<tr>
+			<td class="top">4</td>
+			<td>GDonut</td>
+			<td>956.66</td>
+			<td>Tartarus [23]</td>
+		</tr>
+		<tr>
+			<td class="top">5</td>
+			<td>draxitiii</td>
+			<td>902.43</td>
+			<td>The Golden [27]</td>
+		</tr>
+		<tr>
+			<td class="top">6</td>
+			<td>OktagonF</td>
+			<td>745.77</td>
+			<td>Tartarus [23]</td>
+		</tr>
+		<tr>
+			<td class="top">7</td>
+			<td>Thund3rTr0uble</td>
+			<td>742.56</td>
+			<td>arcturus [16]</td>
+		</tr>
+		<tr>
+			<td class="top">8</td>
+			<td>lDoli</td>
+			<td>658.53</td>
+			<td>The Golden [27]</td>
+		</tr>
+		<tr>
+			<td class="top">9</td>
+			<td>rosesc</td>
+			<td>596.19</td>
+			<td>Promethean [39]</td>
+		</tr>
+		<tr>
+			<td class="top">10</td>
+			<td>TunDHra</td>
+			<td>495.32</td>
+			<td>Trueffet [26]</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>zcob</td>
+			<td>428.29</td>
+			<td>Tartarus [23]</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>MrSpaghetti</td>
+			<td>419.46</td>
+			<td>Thinking Space [41]</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>Pouche</td>
+			<td>323.79</td>
+			<td>Zodiac [31]</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>blackmg</td>
+			<td>272.31</td>
+			<td>Zodiac [31]</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>YoshiL</td>
+			<td>245.98</td>
+			<td>Cognition [51]</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>Twister21</td>
+			<td>227.35</td>
+			<td>Ragnarok [61]</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>Tizetre</td>
+			<td>199.33</td>
+			<td>RUST [55]</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>Noxop</td>
+			<td>191.75</td>
+			<td>RUST [55]</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>MasterBlockk</td>
+			<td>167.43</td>
+			<td>Bloodlust [70]</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>CrokyWi</td>
+			<td>154.65</td>
+			<td>Descent Into Exile [64]</td>
+		</tr>
+		<tr>
+			<td>21</td>
+			<td>Exyl77</td>
+			<td>136.47</td>
+			<td>The Golden [27]</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>shaggy712</td>
+			<td>135.24</td>
+			<td>RUST [55]</td>
+		</tr>
+		<tr>
+			<td>23</td>
+			<td>ALiveWizard</td>
+			<td>127.56</td>
+			<td>Cognition [51]</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>VrohlaiX</td>
+			<td>105.22</td>
+			<td>kowareta [95]</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>jibzou</td>
+			<td>102.10</td>
+			<td>RUST [55]</td>
+		</tr>
+		<tr>
+			<td>26</td>
+			<td>IGabsI</td>
+			<td>99.47</td>
+			<td>Visible Ray [99]</td>
+		</tr>
+		<tr>
+			<td>27</td>
+			<td>IRealI</td>
+			<td>87.26</td>
+			<td>Plasma Pulse Finale [103]</td>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td>coubitic</td>
+			<td>78.60</td>
+			<td>Renevant [47]</td>
+		</tr>
+		<tr>
+			<td>29</td>
+			<td>FigTheCat</td>
+			<td>78.50</td>
+			<td>Arctic Lights [100]</td>
+		</tr>
+		<tr>
+			<td>30</td>
+			<td>Hikudo</td>
+			<td>72.10</td>
+			<td>Bloodlust [70]</td>
+		</tr>
+		<tr>
+			<td>31</td>
+			<td>Willrg</td>
+			<td>64.00</td>
+			<td>Cold Sweat [49]</td>
+		</tr>
+		<tr>
+			<td>32</td>
+			<td>didjimon</td>
+			<td>60.96</td>
+			<td>AKIRA [97]</td>
+		</tr>
+		<tr>
+			<td>33</td>
+			<td>zLiamwwo</td>
+			<td>47.33</td>
+			<td>Jesse Pinkman [74]</td>
+		</tr>
+		<tr>
+			<td>34</td>
+			<td>SteIephant</td>
+			<td>46.63</td>
+			<td>Arctic Lights [100]</td>
+		</tr>
+		<tr>
+			<td>35</td>
+			<td>mix991</td>
+			<td>45.33</td>
+			<td>The Yandere [90]</td>
+		</tr>
+		<tr>
+			<td>36</td>
+			<td>Mivilix</td>
+			<td>45.30</td>
+			<td>kowareta [95]</td>
+		</tr>
+		<tr>
+			<td>37</td>
+			<td>LaChataigneGD</td>
+			<td>41.50</td>
+			<td>The Rupture [68]</td>
+		</tr>
+		<tr>
+			<td>38</td>
+			<td>kaiden phoenix</td>
+			<td>39.62</td>
+			<td>Bloodlust [70]</td>
+		</tr>
+		<tr>
+			<td>39</td>
+			<td>Arctural</td>
+			<td>34.56</td>
+			<td>Terminux [76]</td>
+		</tr>
+		<tr>
+			<td>40</td>
+			<td>Deadlock01</td>
+			<td>29.58</td>
+			<td>Cybernetic Crescent [131]</td>
+		</tr>
+		<tr>
+			<td>41</td>
+			<td>TheTryarSaitama</td>
+			<td>25.55</td>
+			<td>The Yandere [90]</td>
+		</tr>
+		<tr>
+			<td>42</td>
+			<td>Flolepro</td>
+			<td>24.53</td>
+			<td>Nhelv [92]</td>
+		</tr>
+		<tr>
+			<td>43</td>
+			<td>MellyJelly691</td>
+			<td>22.49</td>
+			<td>Sonic Wave Rebirth [139]</td>
+		</tr>
+		<tr>
+			<td>44</td>
+			<td>Tankalty</td>
+			<td>22.10</td>
+			<td>Hyper Paracosm [121]</td>
+		</tr>
+		<tr>
+			<td>45</td>
+			<td>sleyy</td>
+			<td>20.62</td>
+			<td>RANDOM ACCESS MEMORY [130]</td>
+		</tr>
+		<tr>
+			<td>46</td>
+			<td>VisVir</td>
+			<td>15.73</td>
+			<td>Eternal Moment [116]</td>
+		</tr>
+		<tr>
+			<td>47</td>
+			<td>Hidrox144hz</td>
+			<td>14.99</td>
+			<td>Sparkling [119]</td>
+		</tr>
+		<tr>
+			<td>48</td>
+			<td>MarMarEvolve</td>
+			<td>12.38</td>
+			<td>Macabre [132]</td>
+		</tr>
+		<tr>
+			<td>49</td>
+			<td>FoZard</td>
+			<td>11.87</td>
+			<td>Bloodbath [341]</td>
+		</tr>
+		<tr>
+			<td>50</td>
+			<td>minebox230</td>
+			<td>10.00</td>
+			<td>Yatagarasu [150]</td>
+		</tr>
+		<tr>
+			<td>51</td>
+			<td>Shidaro</td>
+			<td>10.00</td>
+			<td>Yatagarasu [150]</td>
+		</tr>
+		<tr>
+			<td>52</td>
+			<td>ThatNexuzGuy</td>
+			<td>10.00</td>
+			<td>Yatagarasu [150]</td>
+		</tr>
+
+    </table>
+
+    <footer>
+        <p id="credits">
+            Site web fait par <a href="https://twitter.com/MajeurTestGD">MajeurTest</a> 
+            - Stats collectées grâce à <a href="https://github.com/Alex1304/jdash">JDash</a> 
+            (fait par <a href="https://github.com/Alex1304">Alex1304</a>)<br>
+            Merci à <a href="https://twitter.com/s4_ultra">UltraS4</a>, 
+                <a href="https://www.youtube.com/@WeensideGD">TheRealWeenside</a>, 
+                <a href="https://www.youtube.com/@Paultam">Paultam</a>, 
+                <a href="https://www.youtube.com/@IntensaEmozione">Intensa</a> et 
+                <a href="https://www.youtube.com/@ThorlakYTB">ThorlakGD</a> pour leur grande aide
+        </p>
+    </footer>
+
+</body>
+
+</html>

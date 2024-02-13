@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="user_question.aspx.cs" Inherits="Animagraphy._2Forum.user_question" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Ask online Form">
     <meta name="description" content="The Ask is a bootstrap design help desk, support forum website template coded and designed with bootstrap Design, Bootstrap, HTML5 and CSS. Ask ideal for wiki sites, knowledge base sites, support forum sites">
-    <meta name="keywords" content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment,blog,template">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment">
     <meta name="robots" content="index, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -94,64 +96,93 @@
             <!-- /.container-fluid -->
         </nav>
     </div>
-<!--===breadcrumb=====-->
+    <!-- ======breadcrumb ======-->
     <section class="header-descriptin329">
         <div class="container">
-            <h3>Blog</h3>
+            <h3>User Deatils</h3>
             <ol class="breadcrumb breadcrumb839">
                 <li><a href="#">Home</a></li>
-                <li class="active">Blog</li>
+                <li class="active">User Details</li>
             </ol>
         </div>
     </section>
-<!--====body content ===-->
     <section class="main-content920">
         <div class="container">
             <div class="row">
-                <div class="col-md-9 blog--top-part2892">
-                    <div class="blog-part3903"> 
-                       <img src="image/blog-2-806x440.png" alt="Image" class="img-responsive">
-                        <div class="blog-details3902">
-                            <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
-                            <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
-                            <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
+                <!--    body content-->
+                <div class="col-md-9">
+                    <div class="about-user2039 mt-70">
+                        <div class="user-title3930">
+                            <h3>About <a href="#">Ahmed Hassan</a>
+                     
+                        <span class="badge229">
+                        <a href="#">punit</a></span>
+                        </h3>
+                            <hr> </div>
+                        <div class="user-image293"> <img src="image/images.png" alt="Image"> </div>
+                        <div class="user-list10039">
+                            <div class="ul-list-user-left29">
+                                <ul>
+                                    <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Registered:</strong> June 4, 2014</li>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Country:</strong> Egypt</li>
+                                    <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 27</li>
+                                    <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Website:</strong><a href="#">view</a></li>
+                                </ul>
+                            </div>
+                            <div class="ul-list-user-right29">
+                                <ul>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> 01111111110</li>
+                                    <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>City:</strong> Cairo</li>
+                                    <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sex: </strong>Male</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user-description303">
+                            <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit.</p> <a href="#">Ask Ahmed Hasan</a> </div>
+                        <div class="user-social3903">
+                            <p>Follow : <span>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        
+                    </span> </p>
                         </div>
                     </div>
-                    <div class="blog-part3903"> <img src="image/blog-3-806x440.jpg" alt="Image" class="img-responsive">
-                        <div class="blog-details3902">
-                            <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
-                            <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
-                            <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
+                    <div class="user-statas921">
+                       <div class="row">
+                       <div class="col-md-6">
+                        <div class="ul_list_ul_list-icon-ok281">
+                            <ul>
+                                <li><a href="#">Questions ( 4 )</a></li>
+                                <li><a href="#">Asked Questions ( 0 )</a></li>
+                                <li><a href="#">Followed Questions ( 3 )</a></li>
+                                <li><a href="#">Posts ( 10 )</a></li>
+                                <li><a href="#">Points ( 208 )</a></li>
+                                <li><a href="#">Followers ( 47 )</a></li>
+                                <li><a href="#">Comments ( 1 )</a></li>
+                            </ul>
+                        </div>
+                           </div>
+                           <div class="col-md-6">
+                        <div class="ul_list_ul_list-icon-ok281">
+                            <ul>
+                                <li><a href="#">Questions ( 4 )</a></li>
+                                <li><a href="#">Asked Questions ( 0 )</a></li>
+                                <li><a href="#">Followed Questions ( 3 )</a></li>
+                                <li><a href="#">Posts ( 10 )</a></li>
+                                <li><a href="#">Points ( 208 )</a></li>
+                                <li><a href="#">Followers ( 47 )</a></li>
+                                <li><a href="#">Comments ( 1 )</a></li>
+                            </ul>
+                        </div>
+                           </div>
                         </div>
                     </div>
-                    <div class="blog-part3903"> <img src="image/blog-4-806x440.jpg" alt="Image" class="img-responsive">
-                        <div class="blog-details3902">
-                            <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
-                            <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
-                            <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
-                        </div>
-                    </div>
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    
                 </div>
                 <!--                end of col-md-9 -->
                 <!--           strart col-md-3 (side bar)-->

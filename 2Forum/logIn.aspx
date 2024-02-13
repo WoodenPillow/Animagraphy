@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logIn.aspx.cs" Inherits="Animagraphy._2Forum.logIn" %>
+
 <!DOCTYPE html>
 <html >
 <head>

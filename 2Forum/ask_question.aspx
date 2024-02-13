@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ask_question.aspx.cs" Inherits="Animagraphy._2Forum.ask_question" %>
+
 <!DOCTYPE html>
 <html lang="en">
 

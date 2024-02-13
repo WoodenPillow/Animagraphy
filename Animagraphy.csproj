@@ -102,10 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2Forum\ask_question.html" />
-    <Content Include="2Forum\blog.html" />
-    <Content Include="2Forum\category.html" />
-    <Content Include="2Forum\contact_us.html" />
+    <Content Include="2Forum\ask_question.aspx" />
+    <Content Include="2Forum\blog.aspx" />
+    <Content Include="2Forum\category.aspx" />
+    <Content Include="2Forum\contact_us.aspx" />
     <Content Include="2Forum\css\animate.css" />
     <Content Include="2Forum\css\bootstrap.css" />
     <Content Include="2Forum\css\bootstrap.min.css" />
@@ -122,16 +122,16 @@
     <Content Include="2Forum\image\blog-4-806x440.jpg" />
     <Content Include="2Forum\image\images.png" />
     <Content Include="2Forum\image\logo.png" />
-    <Content Include="2Forum\index.html" />
+    <Content Include="2Forum\index.aspx" />
     <Content Include="2Forum\js\bootstrap.js" />
     <Content Include="2Forum\js\bootstrap.min.js" />
     <Content Include="2Forum\js\editor.js" />
     <Content Include="2Forum\js\jquery-3.1.1.min.js" />
-    <Content Include="2Forum\logIn.html" />
-    <Content Include="2Forum\post-deatils.html" />
-    <Content Include="2Forum\signup.html" />
-    <Content Include="2Forum\user.html" />
-    <Content Include="2Forum\user_question.html" />
+    <Content Include="2Forum\logIn.aspx" />
+    <Content Include="2Forum\post-details.aspx" />
+    <Content Include="2Forum\signup.aspx" />
+    <Content Include="2Forum\user.aspx" />
+    <Content Include="2Forum\user_question.aspx" />
     <Content Include="3WorldMap\favicon.ico" />
     <Content Include="3WorldMap\favicon.png" />
     <Content Include="3WorldMap\index.css" />

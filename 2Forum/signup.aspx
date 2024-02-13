@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="Animagraphy._2Forum.signup" %>
+
 <!DOCTYPE html>
 <html >
 <head>

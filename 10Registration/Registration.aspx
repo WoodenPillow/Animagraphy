@@ -74,5 +74,6 @@
             <asp:Label ID="prompt" runat="server" CssClass="error-message" Visible="false"></asp:Label>
             </form>
         </div>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>
     </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="WAPP_Assignment.Registration" EnableViewState="true"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="WAPP_Assignment.Registration" EnableViewState="true" %>
 
 <!DOCTYPE html>
 
@@ -72,8 +72,8 @@
             <label for="chkAgreement">I hereby declare that the above information provided is true and correct.</label>
             <asp:Button type="submit" class="btn" id="Button1" Text="Register" OnClick="Button1_Click" runat="server" />
             <asp:Label ID="prompt" runat="server" CssClass="error-message" Visible="false"></asp:Label>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>
             </form>
         </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>
     </body>
 </html>

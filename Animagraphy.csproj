@@ -715,12 +715,12 @@
     <Content Include="9Login\login_bg.jpg" />
     <Content Include="About.aspx" />
     <Content Include="App_Code\Main_Page.aspx" />
+    <Content Include="5Dictionary\Images\B.jpg" />
+    <Content Include="5Dictionary\Images\C.jpg" />
     <Content Include="App_Data\AnimaDB.mdf" />
     <Content Include="App_Data\AnimaDB_log.ldf">
       <DependentUpon>AnimaDB.mdf</DependentUpon>
     </Content>
-    <Content Include="5Dictionary\Images\B.jpg" />
-    <Content Include="5Dictionary\Images\C.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -990,7 +990,6 @@
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.designer.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>

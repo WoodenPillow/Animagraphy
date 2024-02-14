@@ -63,8 +63,6 @@ namespace WAPP_Assignment
                 prompt.Text = "Registration failed!";
             }
         }
-
-    
         protected void Page_Load(object sender, EventArgs e)
         {
 

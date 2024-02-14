@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using System.Web;
 
 namespace WAPP_Assignment
 {
@@ -21,6 +22,12 @@ namespace WAPP_Assignment
                     if (string.IsNullOrEmpty(username))
                     {
                         throw new Exception("Username cannot be empty.");
+                    }
+
+                    // Validate email format
+                    if (!IsValidEmail(email.Text))
+                    {
+                        throw new Exception("Invalid email format.");
                     }
 
                     string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username";
@@ -47,7 +54,7 @@ namespace WAPP_Assignment
                                 insertCmd.Parameters.AddWithValue("@email", email.Text);
                                 insertCmd.Parameters.AddWithValue("@username", username);
                                 insertCmd.Parameters.AddWithValue("@password", pwd.Text);
-                                insertCmd.Parameters.AddWithValue("@usertype", "member"); // Set user type as 'member'
+                                insertCmd.Parameters.AddWithValue("@usertype", "member"); 
                                 insertCmd.ExecuteNonQuery();
                             }
                             Response.Redirect("~/9Login/Login.aspx");
@@ -63,9 +70,24 @@ namespace WAPP_Assignment
                 prompt.Text = "Registration failed!";
             }
         }
+
+        protected bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

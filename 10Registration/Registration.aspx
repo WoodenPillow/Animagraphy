@@ -51,10 +51,10 @@
                     <div class="input-field">
                         <asp:DropDownList ID="interestedTopic" required="required" runat="server">
                             <asp:ListItem Value="" Text="-- Select Interested Topic --"></asp:ListItem>
-                            <asp:ListItem Value="a">A</asp:ListItem>
-                            <asp:ListItem Value="b">B</asp:ListItem>
-                            <asp:ListItem Value="c">C</asp:ListItem>
-                            <asp:ListItem Value="d">D</asp:ListItem>
+                            <asp:ListItem Value="Common Household Pests">Common Household Pests</asp:ListItem>
+                            <asp:ListItem Value="Existing Animals">Existing Animals</asp:ListItem>
+                            <asp:ListItem Value="Extinct Animals">Extinct Animals</asp:ListItem>
+                            <asp:ListItem Value="Ancient Animals">Ancient Animals</asp:ListItem>
                         </asp:DropDownList>
                     </div>
 

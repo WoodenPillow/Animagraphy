@@ -65,18 +65,18 @@
                         <li><a href="ask_question.html">Forum</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="category.html">Question Category</a></li>
-                                <li><a href="category.html">Wildlife Conservation</a></li>
-                                <li><a href="category.html">Animal Rescue and Rehabilitation</a></li>
-                                <li><a href="category.html">Endangered Species Awareness</a></li>
-                                <li><a href="category.html">Eco-Friendly Pet Care</a></li>
+                                <li><a href="post.aspx">Question Category</a></li>
+                                <li><a href="forum.aspx">Wildlife Conservation</a></li>
+                                <li><a href="forum.aspx">Animal Rescue and Rehabilitation</a></li>
+                                <li><a href="forum.aspx">Endangered Species Awareness</a></li>
+                                <li><a href="forum.aspx">Eco-Friendly Pet Care</a></li>
                             </ul>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="ask_question.aspx"> 
+                                <li><a href="forum.aspx"> 
 
                                     </a></li>
-                                <li><a href="post-details.aspx"> Post-Details </a></li>
+                                <li><a href="post.aspx"> Post-Questions </a></li>
                             </ul>
                         </li>
                     </ul>
@@ -144,10 +144,8 @@
                 </div>
              
               
-                </div>
-<!--                end of col-md-9 -->
-           
-<!--           strart col-md-3 (side bar)-->
+                </div>           
+<!--           start col-md-3 (side bar)-->
            <aside class="col-md-3 sidebar97239">
              <div class="status-part3821">
             <h4>Forum's Stats</h4>
@@ -340,7 +338,7 @@
                    <h4>Who We Are ?</h4>
                     <p>3 Degree Students striving for animals' future</p>
                     <h4>Slogan :</h4>
-                    <p>For Animals by Animals</p>
+                    <p>For Human by Animals</p>
                     <h4>Support :</h4>
                     <p>Support Telephone No : (+60)109055328</p>
                     <p>Support Email Account : vincentyap2k@gmail.com</p>

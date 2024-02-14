@@ -127,6 +127,7 @@
     <Content Include="1MainPage\js\jquery-3.1.1.min.js" />
     <Content Include="1MainPage\main.aspx" />
     <Content Include="2Forum\image\images.png" />
+    <Content Include="2Forum\image\logo.png" />
     <Content Include="2Forum\post.aspx" />
     <Content Include="2Forum\forum.aspx" />
     <Content Include="2Forum\css\animate.css" />
@@ -143,7 +144,6 @@
     <Content Include="2Forum\image\blog-2-806x440.png" />
     <Content Include="2Forum\image\blog-3-806x440.jpg" />
     <Content Include="2Forum\image\blog-4-806x440.jpg" />
-    <Content Include="2Forum\image\logo.png" />
     <Content Include="2Forum\js\bootstrap.js" />
     <Content Include="2Forum\js\bootstrap.min.js" />
     <Content Include="2Forum\js\editor.js" />

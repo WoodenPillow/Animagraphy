@@ -1,12 +1,12 @@
-<%@ Page Language="C#" AutoEventWireup="true"%>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Disclaimer: This code is all terrible, it was a hackathon. -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://www.webglearth.com/v2/api.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
     <title>Country Identifier</title>
     <script>
       const makeNastyTableFromObject = (jsonObject, elementName) => {
@@ -106,7 +106,7 @@
           document.querySelector('#countryFlag').src = `https://flagcdn.com/w320/${(data.CountryCode).toLowerCase()}.png`;
           document.querySelector('#countryName').textContent = data.countryName;
         } else {
-          document.querySelector('#countryFlag').src = './Animagraphy-circled.png';
+          document.querySelector('#countryFlag').src = './smiley.png';
           document.querySelector('#countryName').textContent = '';
         }
         if (latitude && longitude) {
@@ -129,14 +129,14 @@
   </head>
   <body onload="initialize()">
     <div id="earth_div">
-      <h1 id="titleText">Click to learn their national animals.</h1>
+      <h1 id="titleText">Click on a Country to Get More Information</h1>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       <div id="side-panel">
         <h1 id="moreDetails">More Information</h1>
         <p id="LatLong"></p>
-        <input type="image" id="countryFlag"  src="Animagraphy-circled.png"  onclick="buttonClick()" />
+        <input type="image" id="countryFlag"  src="smiley.png"  onclick="buttonClick()" />
         <p id="countryName"></p>
         <p id="dataDump"></p>
         <p id="countryCoatLabel"></p>

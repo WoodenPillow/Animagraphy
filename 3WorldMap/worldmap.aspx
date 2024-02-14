@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://www.webglearth.com/v2/api.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>WorldMap With Animals</title>
+    <title>AnimaWorldMap</title>
     <script>
         const makeNastyTableFromObject = (jsonObject, elementName) => {
             let tableString = "<table><tr>"

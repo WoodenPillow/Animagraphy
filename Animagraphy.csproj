@@ -128,8 +128,9 @@
     <Content Include="2Forum\post.aspx" />
     <Content Include="2Forum\forum.aspx" />
     <Content Include="3WorldMap\Animagraphy-circled.png" />
+    <Content Include="3WorldMap\index.aspx" />
+    <Content Include="3WorldMap\index.css" />
     <Content Include="3WorldMap\worldmap.aspx" />
-    <Content Include="3WorldMap\worldmap.css" />
     <Content Include="4Ranking\resources\css\Fonts\GD Fonts\Fonts GD.txt" />
     <Content Include="4Ranking\resources\css\Fonts\SIL Open Font License.txt" />
     <Content Include="4Ranking\resources\css\leaderboard.css" />
@@ -943,6 +944,13 @@
     </Compile>
     <Compile Include="10Registration\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3WorldMap\worldmap.aspx.cs">
+      <DependentUpon>worldmap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3WorldMap\worldmap.aspx.designer.cs">
+      <DependentUpon>worldmap.aspx</DependentUpon>
     </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>

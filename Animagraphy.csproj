@@ -102,6 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="10Registration\Registration.aspx" />
+    <Content Include="10Registration\registration.css" />
+    <Content Include="10Registration\registration_bg.jpg" />
     <Content Include="2Forum\ask_question.aspx" />
     <Content Include="2Forum\blog.aspx" />
     <Content Include="2Forum\category.aspx" />
@@ -687,6 +690,18 @@
     <Content Include="5Dictionary\A-Z Dictionary.aspx" />
     <Content Include="5Dictionary\Images\A.jpg" />
     <Content Include="5Dictionary\bg.jpg" />
+    <Content Include="7Matching\Images\AlmondMoth.jpg" />
+    <Content Include="7Matching\Images\DampwoodTermite.jpg" />
+    <Content Include="7Matching\Images\FieldMice.jpg" />
+    <Content Include="7Matching\Images\FireAnt.jpg" />
+    <Content Include="7Matching\Images\FruitFlies.jpg" />
+    <Content Include="7Matching\Images\HouseCentipedes.jpg" />
+    <Content Include="7Matching\Images\IndianmealMoth.jpg" />
+    <Content Include="7Matching\Images\MaizeWeevil.jpg" />
+    <Content Include="7Matching\Matching.aspx" />
+    <Content Include="7Matching\matching.css" />
+    <Content Include="7Matching\Images\Silverfish.jpg" />
+    <Content Include="7Matching\Images\WoodRats.jpg" />
     <Content Include="About.aspx" />
     <Content Include="App_Code\Main_Page.aspx" />
     <Content Include="App_Data\AnimaDB.mdf" />
@@ -897,12 +912,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10Registration\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10Registration\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.designer.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Matching\Matching.aspx.cs">
+      <DependentUpon>Matching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Matching\Matching.aspx.designer.cs">
+      <DependentUpon>Matching.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>

@@ -31,7 +31,6 @@
     </style>
 </head>
 <body>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:assignmentDatabase %>" SelectCommand="SELECT * FROM [ass_database]"></asp:SqlDataSource>
     <div class="wrapper">
         <form id="form1" runat="server" enctype="multipart/form-data" enableviewstate="true">
             <h1>Animagraphy Registration Page</h1>

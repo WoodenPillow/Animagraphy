@@ -990,6 +990,7 @@
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.designer.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>

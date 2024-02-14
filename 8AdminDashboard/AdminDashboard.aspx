@@ -7,20 +7,19 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"/>
     <style>
-        .body {
+        body {
             font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #cfe2f3;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Dark mode dashboard style */
         body.dark-mode {
             background-color: #1a1a1a;
             color: #fff;
         }
 
-        /* Light mode dashboard style */
         body.light-mode {
             background-color: #f0f0f0;
             color: #333;
@@ -32,7 +31,6 @@
             padding: 20px;
         }
 
-        /* Header Styles */
         header {
             background-color: #333;
             color: #fff;
@@ -45,7 +43,6 @@
             font-size: 36px;
         }
 
-        /* Navigation Styles */
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -74,7 +71,7 @@
 
         section {
             margin-bottom: 30px;
-            background-color: #fff;
+            background-color: lightgreen;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -121,12 +118,6 @@
         .section-expanded .toggle-icon::before {
             transform: rotate(90deg);
         }
-
-        section, footer {
-            background-color: inherit; /* Inherit background color from body */
-            color: inherit; /* Inherit text color from body */
-        }
-
     </style>
 </head>
 <body>
@@ -244,14 +235,14 @@
                 <div class="section-content">
                 <!-- Options to customize and personalize the dashboard layout -->
                     <section id="dashboard-customization-options">
-                    <h2>Customize and Personalize Dashboard</h2>
+                    <h2>Dashboard Theme</h2>
                     <p>Select a style:</p>
                     <select id="styleSelector" onchange="applyStyle()">
                         <option value="default">Default</option>
                         <option value="dark">Dark</option>
                         <option value="light">Light</option>
                     </select>
-                </section>
+                  </section>
             </div>
             </section>
         </main>
@@ -271,7 +262,6 @@
                  var styleSelector = document.getElementById("styleSelector");
                  var selectedStyle = styleSelector.options[styleSelector.selectedIndex].value;
 
-                 // Apply selected style based on user preference
                  var body = document.body;
                  body.classList.remove("dark-mode");
                  body.classList.remove("light-mode");
@@ -281,11 +271,8 @@
                  } else if (selectedStyle === "light") {
                      body.classList.add("light-mode");
                  }
-
-                 // Save user preference (optional)
-                 // Example: You can use AJAX to send the selectedStyle value to the server and store it in the database or session.
              }
-         </script>
+         </script>  
     </form>
 </body>
 </html>

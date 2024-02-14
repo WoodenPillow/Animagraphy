@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Disclaimer: This code is all terrible, it was a hackathon. -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://www.webglearth.com/v2/api.js"></script>
@@ -127,7 +128,7 @@
   </head>
   <body onload="initialize()">
     <div id="earth_div">
-      <h1 id="titleText">Click to learn their national animals</h1>
+      <h1 id="titleText">Click to learn their national animals.</h1>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">

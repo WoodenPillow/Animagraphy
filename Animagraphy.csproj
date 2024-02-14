@@ -105,10 +105,12 @@
     <Content Include="10Registration\Registration.aspx" />
     <Content Include="10Registration\registration.css" />
     <Content Include="10Registration\registration_bg.jpg" />
+    <Content Include="1MainPage\index.aspx" />
+    <Content Include="1MainPage\logIn.aspx" />
+    <Content Include="1MainPage\signup.aspx" />
     <Content Include="2Forum\ask_question.aspx" />
     <Content Include="2Forum\blog.aspx" />
     <Content Include="2Forum\category.aspx" />
-    <Content Include="2Forum\contact_us.aspx" />
     <Content Include="2Forum\css\animate.css" />
     <Content Include="2Forum\css\bootstrap.css" />
     <Content Include="2Forum\css\bootstrap.min.css" />
@@ -125,30 +127,18 @@
     <Content Include="2Forum\image\blog-4-806x440.jpg" />
     <Content Include="2Forum\image\images.png" />
     <Content Include="2Forum\image\logo.png" />
-    <Content Include="2Forum\index.aspx" />
     <Content Include="2Forum\js\bootstrap.js" />
     <Content Include="2Forum\js\bootstrap.min.js" />
     <Content Include="2Forum\js\editor.js" />
     <Content Include="2Forum\js\jquery-3.1.1.min.js" />
-    <Content Include="2Forum\logIn.aspx" />
     <Content Include="2Forum\post-details.aspx" />
-    <Content Include="2Forum\signup.aspx" />
-    <Content Include="2Forum\user.aspx" />
-    <Content Include="2Forum\user_question.aspx" />
-    <Content Include="3WorldMap\favicon.ico" />
-    <Content Include="3WorldMap\favicon.png" />
+    <Content Include="3WorldMap\Animagraphy-circled.png" />
+    <Content Include="3WorldMap\index.aspx" />
     <Content Include="3WorldMap\index.css" />
     <Content Include="3WorldMap\index.html" />
-    <Content Include="3WorldMap\smiley.png" />
+    <Content Include="3WorldMap\worldmap.aspx" />
+    <Content Include="3WorldMap\worldmap.css" />
     <Content Include="4Ranking\index.html" />
-    <Content Include="4Ranking\leaderboard\cp.html" />
-    <Content Include="4Ranking\leaderboard\demonlist.html" />
-    <Content Include="4Ranking\leaderboard\demons.html" />
-    <Content Include="4Ranking\leaderboard\diamonds.html" />
-    <Content Include="4Ranking\leaderboard\index.html" />
-    <Content Include="4Ranking\leaderboard\secret-coins.html" />
-    <Content Include="4Ranking\leaderboard\stars.html" />
-    <Content Include="4Ranking\leaderboard\user-coins.html" />
     <Content Include="4Ranking\ressources\css\Fonts\GD Fonts\Fonts GD.txt" />
     <Content Include="4Ranking\ressources\css\Fonts\SIL Open Font License.txt" />
     <Content Include="4Ranking\ressources\css\leaderboard.css" />
@@ -783,6 +773,13 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="5Dictionary\Images\T.jpg" />
+    <Content Include="5Dictionary\Images\U.jpg" />
+    <Content Include="5Dictionary\Images\V.jpg" />
+    <Content Include="5Dictionary\Images\W.jpg" />
+    <Content Include="5Dictionary\Images\X.jpg" />
+    <Content Include="5Dictionary\Images\Y.jpg" />
+    <Content Include="5Dictionary\Images\Z.jpg" />
     <Content Include="2Forum\fonts\batmfa__ - Copy.ttf" />
     <Content Include="2Forum\fonts\batmfa__.ttf" />
     <Content Include="2Forum\fonts\FontAwesome - Copy.otf" />
@@ -877,13 +874,6 @@
     <Content Include="4Ranking\ressources\fontawesome\scss\_sizing.scss" />
     <Content Include="4Ranking\ressources\fontawesome\scss\_stacked.scss" />
     <Content Include="4Ranking\ressources\fontawesome\scss\_variables.scss" />
-    <Content Include="5Dictionary\Images\T.jpg" />
-    <Content Include="5Dictionary\Images\U.jpg" />
-    <Content Include="5Dictionary\Images\V.jpg" />
-    <Content Include="5Dictionary\Images\W.jpg" />
-    <Content Include="5Dictionary\Images\X.jpg" />
-    <Content Include="5Dictionary\Images\Y.jpg" />
-    <Content Include="5Dictionary\Images\Z.jpg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -924,6 +914,12 @@
     </Compile>
     <Compile Include="10Registration\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2Forum\blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2Forum\blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
@@ -1016,9 +1012,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="1MainPage\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

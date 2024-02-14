@@ -15,6 +15,7 @@ namespace WAPP_Assignment
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            /*
             string connectionString = ConfigurationManager.ConnectionStrings["assignmentDatabase"].ConnectionString;
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -76,6 +77,7 @@ namespace WAPP_Assignment
                     prompt.Text = "An error occurred: " + ex.Message;
                 }
             }
+            */
         }
     }
 }

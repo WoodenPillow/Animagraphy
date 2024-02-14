@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Animagraphy Login Page</title>
-    <link rel= "stylesheet" href="login.css" />
+    <link rel= "stylesheet" href="login.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
 </head>
 
@@ -29,11 +29,10 @@
             </div>
             <button id="Button1" type="submit" class="btn" form="form1"  runat="server">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="Registration.aspx">Register</a></p>
+                <p>Don't have an account? <a href="../10Registration/Registration.aspx">Register</a></p>
             </div>
-            <asp:Label style="position:center" ID="prompt" runat="server" Visible="false"></asp:Label>
+            <asp:Label style="text-align:center" ID="prompt" runat="server" Visible="false"></asp:Label>
             </form>
         </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:assignmentDatabase %>" SelectCommand="SELECT * FROM [ass_database]"></asp:SqlDataSource>
 </body>
 </html>

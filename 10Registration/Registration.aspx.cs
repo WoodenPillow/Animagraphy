@@ -7,6 +7,12 @@ namespace WAPP_Assignment
 {
     public partial class Registration : System.Web.UI.Page
         {
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/9Login/Login.aspx");
+        }
+        /*
         protected void Button1_Click(object sender, EventArgs e)
             {
                 try
@@ -71,6 +77,7 @@ namespace WAPP_Assignment
                 prompt.Text = "Registration failed: " + ex.Message;
             }
         }
+        */
 
         private string HashPassword(string password)
         {

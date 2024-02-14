@@ -70,7 +70,7 @@
                 </div>
             <input type="checkbox" id="chkAgreement" required="required" />
             <label for="chkAgreement">I hereby declare that the above information provided is true and correct.</label>
-            <button type="submit" class="btn" id="Button1">Register</button>
+            <asp:Button type="submit" class="btn" id="Button1" Text="Register" OnClick="Button1_Click" runat="server" />
             <asp:Label ID="prompt" runat="server" CssClass="error-message" Visible="false"></asp:Label>
             </form>
         </div>

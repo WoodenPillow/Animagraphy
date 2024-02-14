@@ -293,13 +293,13 @@
         <div class="post-details021">
             <a href="#"><h5>The Importance of Bees in Our Ecosystem</h5></a>
             <p>Understanding the crucial role bees play in pollination and how we can support their populations.</p>
-            <small style="color: #848991">April 26, 2024</small>
+            <small style="color: #848991">April 26, 2023</small>
         </div>
         <hr>
         <div class="post-details021">
             <a href="#"><h5>How to Create a Wildlife-Friendly Backyard</h5></a>
             <p>Simple steps to make your garden a haven for local wildlife, from bird feeders to native plants.</p>
-            <small style="color: #848991">June 5, 2024</small>
+            <small style="color: #848991">March 5, 2023</small>
     </div>
 
     

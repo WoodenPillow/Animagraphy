@@ -690,6 +690,8 @@
     <Content Include="5Dictionary\A-Z Dictionary.aspx" />
     <Content Include="5Dictionary\Images\A.jpg" />
     <Content Include="5Dictionary\bg.jpg" />
+    <Content Include="6TableSearch\bg.jpg" />
+    <Content Include="6TableSearch\Table Search.aspx" />
     <Content Include="7Matching\Images\AlmondMoth.jpg" />
     <Content Include="7Matching\Images\DampwoodTermite.jpg" />
     <Content Include="7Matching\Images\FieldMice.jpg" />
@@ -925,6 +927,13 @@
     </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.designer.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="6TableSearch\Table Search.aspx.cs">
+      <DependentUpon>Table Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="6TableSearch\Table Search.aspx.designer.cs">
+      <DependentUpon>Table Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="7Matching\Matching.aspx.cs">
       <DependentUpon>Matching.aspx</DependentUpon>

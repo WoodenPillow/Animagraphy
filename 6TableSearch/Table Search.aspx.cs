@@ -103,7 +103,7 @@ namespace WebApplication1
         protected void btnBack_Click(object sender, EventArgs e)
         {
             // Redirect to the main page
-            Response.Redirect("~/7Matching/Matching.aspx");
+            Response.Redirect("~/1MainPage/main.aspx");
         }
     }
 }

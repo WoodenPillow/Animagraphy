@@ -6,11 +6,24 @@
 <head runat="server">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"/>
-    <style>body {
+    <style>
+        .body {
             font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+        }
+
+        /* Dark mode dashboard style */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Light mode dashboard style */
+        body.light-mode {
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         .container {
@@ -55,7 +68,6 @@
             background-color: #555;
         }
 
-        /* Main Content Styles */
         main {
             padding: 20px;
         }
@@ -72,7 +84,6 @@
             margin-top: 0;
         }
 
-        /* Footer Styles */
         footer {
             background-color: #333;
             color: #fff;
@@ -109,6 +120,11 @@
 
         .section-expanded .toggle-icon::before {
             transform: rotate(90deg);
+        }
+
+        section, footer {
+            background-color: inherit; /* Inherit background color from body */
+            color: inherit; /* Inherit text color from body */
         }
 
     </style>
@@ -227,27 +243,14 @@
                 </h2>
                 <div class="section-content">
                 <!-- Options to customize and personalize the dashboard layout -->
-                    <section id="dashboard-layout">
-            <h3>Dashboard Layout</h3>
-            <!-- Add elements for customizing dashboard layout -->
-            <p>Customize dashboard layout here...</p>
-            <button onclick="customizeDashboardLayout()">Customize Layout</button>
-                </section>
-        
-                <!-- Dashboard Theme Customization -->
-                <section id="dashboard-theme">
-                    <h3>Dashboard Theme</h3>
-                    <!-- Add elements for customizing dashboard theme -->
-                    <p>Personalize dashboard theme here...</p>
-                    <button onclick="customizeDashboardTheme()">Personalize Theme</button>
-                </section>
-        
-                <!-- Dashboard Widgets Configuration -->
-                <section id="dashboard-widgets">
-                    <h3>Dashboard Widgets</h3>
-                    <!-- Add elements for configuring dashboard widgets -->
-                    <p>Configure dashboard widgets here...</p>
-                    <button onclick="configureDashboardWidgets()">Configure Widgets</button>
+                    <section id="dashboard-customization-options">
+                    <h2>Customize and Personalize Dashboard</h2>
+                    <p>Select a style:</p>
+                    <select id="styleSelector" onchange="applyStyle()">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
                 </section>
             </div>
             </section>
@@ -262,6 +265,25 @@
                  var section = document.getElementById(sectionId);
                  sectionContent.classList.toggle('show');
                  section.classList.toggle('section-expanded');
+             }
+
+             function applyStyle() {
+                 var styleSelector = document.getElementById("styleSelector");
+                 var selectedStyle = styleSelector.options[styleSelector.selectedIndex].value;
+
+                 // Apply selected style based on user preference
+                 var body = document.body;
+                 body.classList.remove("dark-mode");
+                 body.classList.remove("light-mode");
+
+                 if (selectedStyle === "dark") {
+                     body.classList.add("dark-mode");
+                 } else if (selectedStyle === "light") {
+                     body.classList.add("light-mode");
+                 }
+
+                 // Save user preference (optional)
+                 // Example: You can use AJAX to send the selectedStyle value to the server and store it in the database or session.
              }
          </script>
     </form>

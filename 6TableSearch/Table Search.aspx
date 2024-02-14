@@ -80,6 +80,26 @@
         .animal-name:hover .animal-image {
             visibility: visible;
         }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .back-button button {
+            padding: 10px 20px;
+            background-color: #ccc;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .back-button button:hover {
+            background-color: #bbb;
+        }
     </style>
 </head>
 <body>
@@ -115,6 +135,9 @@
                     </tbody>
                 </table>
             </div>
+            <div class="back-button">
+                <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" />
+            </div>kj
         </div>
 
         <script>

@@ -99,5 +99,11 @@ namespace WebApplication1
             public string Ecosystem { get; set; }
             public string LifeStatus { get; set; }
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            // Redirect to the main page
+            Response.Redirect("~/7Matching/Matching.aspx");
+        }
     }
 }

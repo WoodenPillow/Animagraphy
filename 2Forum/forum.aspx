@@ -63,11 +63,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="site.Master">Home</a></li>
                         <li><a href="forum.aspx">Forum</a></li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question Category<span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="post.aspx">Question Category</a></li>
+                                <li><a href="forum.aspx">Animal Fun Facts</a></li>
                                 <li><a href="forum.aspx">Wildlife ConservationL</a></li>
                                 <li><a href="forum.aspx">Animal Rescue and Rehabilitation</a></li>
                                 <li><a href="forum.aspx">Endangered Species Awarenest</a></li>

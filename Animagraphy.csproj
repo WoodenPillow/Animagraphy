@@ -105,27 +105,6 @@
     <Content Include="10Registration\Registration.aspx" />
     <Content Include="10Registration\registration.css" />
     <Content Include="10Registration\registration_bg.jpg" />
-    <Content Include="1MainPage\css\animate.css" />
-    <Content Include="1MainPage\css\bootstrap.css" />
-    <Content Include="1MainPage\css\bootstrap.min.css" />
-    <Content Include="1MainPage\css\editor.css" />
-    <Content Include="1MainPage\css\font-awesome.min.css" />
-    <Content Include="1MainPage\css\loginstyle.css" />
-    <Content Include="1MainPage\css\responsive.css" />
-    <Content Include="1MainPage\css\style.css" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont - Copy.svg" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont.svg" />
-    <Content Include="1MainPage\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="1MainPage\image\blog-2-806x440.png" />
-    <Content Include="1MainPage\image\blog-3-806x440.jpg" />
-    <Content Include="1MainPage\image\blog-4-806x440.jpg" />
-    <Content Include="1MainPage\image\images.png" />
-    <Content Include="1MainPage\image\logo.png" />
-    <Content Include="1MainPage\js\bootstrap.js" />
-    <Content Include="1MainPage\js\bootstrap.min.js" />
-    <Content Include="1MainPage\js\editor.js" />
-    <Content Include="1MainPage\js\jquery-3.1.1.min.js" />
-    <Content Include="1MainPage\main.aspx" />
     <Content Include="2Forum\css\animate.css" />
     <Content Include="2Forum\css\bootstrap.css" />
     <Content Include="2Forum\css\bootstrap.min.css" />
@@ -740,12 +719,23 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="5Dictionary\Images\D.jpg" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\editor.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\loginstyle.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="5Dictionary\DictionaryStyleSheet.css" />
     <Content Include="5Dictionary\Images\E.jpg" />
     <Content Include="5Dictionary\Images\F.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="5Dictionary\Images\G.jpg" />
+    <Content Include="fonts\fontawesome-webfont - Copy.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="5Dictionary\Images\H.jpg" />
     <Content Include="5Dictionary\Images\I.jpg" />
@@ -759,6 +749,15 @@
     <Content Include="5Dictionary\Images\Q.jpg" />
     <Content Include="5Dictionary\Images\R.jpg" />
     <Content Include="5Dictionary\Images\S.jpg" />
+    <Content Include="image\blog-2-806x440.png" />
+    <Content Include="image\blog-3-806x440.jpg" />
+    <Content Include="image\blog-4-806x440.jpg" />
+    <Content Include="image\images.png" />
+    <Content Include="image\logo.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\editor.js" />
+    <Content Include="js\jquery-3.1.1.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -873,22 +872,6 @@
     <Content Include="4Ranking\resources\fontawesome\scss\_sizing.scss" />
     <Content Include="4Ranking\resources\fontawesome\scss\_stacked.scss" />
     <Content Include="4Ranking\resources\fontawesome\scss\_variables.scss" />
-    <Content Include="1MainPage\fonts\batmfa__ - Copy.ttf" />
-    <Content Include="1MainPage\fonts\batmfa__.ttf" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont - Copy.eot" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont - Copy.ttf" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont - Copy.woff" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont - Copy.woff2" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont.eot" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont.ttf" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont.woff" />
-    <Content Include="1MainPage\fonts\fontawesome-webfont.woff2" />
-    <Content Include="1MainPage\fonts\FontAwesome - Copy.otf" />
-    <Content Include="1MainPage\fonts\FontAwesome.otf" />
-    <Content Include="1MainPage\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="1MainPage\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="1MainPage\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="1MainPage\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="2Forum\fonts\batmfa__ - Copy.ttf" />
     <Content Include="2Forum\fonts\batmfa__.ttf" />
     <Content Include="2Forum\fonts\fontawesome-webfont - Copy.eot" />
@@ -905,6 +888,23 @@
     <Content Include="2Forum\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="2Forum\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="2Forum\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\batmfa__ - Copy.ttf" />
+    <Content Include="fonts\batmfa__.ttf" />
+    <Content Include="fonts\fontawesome-webfont - Copy.eot" />
+    <Content Include="fonts\fontawesome-webfont - Copy.ttf" />
+    <Content Include="fonts\fontawesome-webfont - Copy.woff" />
+    <Content Include="fonts\fontawesome-webfont - Copy.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome - Copy.otf" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\Animagraphy-Azure - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -945,13 +945,6 @@
     </Compile>
     <Compile Include="10Registration\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="1MainPage\main.aspx.cs">
-      <DependentUpon>main.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="1MainPage\main.aspx.designer.cs">
-      <DependentUpon>main.aspx</DependentUpon>
     </Compile>
     <Compile Include="5Dictionary\A-Z Dictionary.aspx.cs">
       <DependentUpon>A-Z Dictionary.aspx</DependentUpon>

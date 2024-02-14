@@ -704,6 +704,7 @@
     <Content Include="7Matching\matching.css" />
     <Content Include="7Matching\Images\Silverfish.jpg" />
     <Content Include="7Matching\Images\WoodRats.jpg" />
+    <Content Include="8AdminDashboard\AdminDashboard.aspx" />
     <Content Include="About.aspx" />
     <Content Include="App_Code\Main_Page.aspx" />
     <Content Include="App_Data\AnimaDB.mdf" />
@@ -941,6 +942,13 @@
     </Compile>
     <Compile Include="7Matching\Matching.aspx.designer.cs">
       <DependentUpon>Matching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="8AdminDashboard\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="8AdminDashboard\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>

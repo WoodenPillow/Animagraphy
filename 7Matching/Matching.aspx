@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Personality Match of Some Common Household Pets</title>
+    <title>Personality Match of Some Common Household Pests</title>
     <link rel="stylesheet" href="matching.css" />
 </head>
 <body>
     <div class="wrapper">
         <form id="form1" runat="server">
-            <h1>Personality Match of Some Common Househohld Pets</h1>
+            <h1>Personality Match of Some Common Househohld Pests</h1>
             <div class="slider-container">
                 <label class="slider-label">Animal Size</label>
                 <input class="range" type="range" name="" min="0" max="10" value="0" id="slider1" onchange="rangeSlide('slider1', this.value)" onmousemove="rangeSlide('slider1', this.value)" oninput="updateSliderTrackColor(this)" />

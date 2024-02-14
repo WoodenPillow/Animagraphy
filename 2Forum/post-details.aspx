@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="post_details.aspx.cs" Inherits="Animagraphy._2Forum.post_details" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"%>
 
 <!DOCTYPE html>
 <html lang="en">

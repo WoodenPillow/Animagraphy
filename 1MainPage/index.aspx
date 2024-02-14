@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Animagraphy._2Forum.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"%>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -28,7 +28,7 @@
                         <ul>
                             <li><a href="contact_us.html" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
-                            <li><a href="logIn.html" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Login Area</a></li>
+                            <li><a href="logIn.html" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>
                 </div>

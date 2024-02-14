@@ -1,4 +1,4 @@
-
+<%@ Page Language="C#" AutoEventWireup="true"%>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ask_question.aspx.cs" Inherits="Animagraphy._2Forum.ask_question" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Ask online Form">
-    <meta name="description" content="The Ask is a bootstrap design help desk, support forum website template coded and designed with bootstrap Design, Bootstrap, HTML5 and CSS. Ask ideal for wiki sites, knowledge base sites, support forum sites">
-    <meta name="keywords" content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment">
+    <meta name="title" content="Animagraphy's Forum">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="robots" content="index, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -29,7 +29,7 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
                             <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
-                            <li><a href="logIn.html"><i class="fa fa-user" aria-hidden="true"></i>Login Area</a></li>
+                            <li><a href="logIn.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,35 +62,23 @@
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="ask_question.html">Ask Question</a></li>
+                        <li><a href="ask_question.html">Forum</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="category.html">Question Category</a></li>
-                                <li><a href="category.html">HTML</a></li>
-                                <li><a href="category.html">CSS</a></li>
-                                <li><a href="category.html">Javascript</a></li>
-                                <li><a href="category.html">Bootstrap</a></li>
+                                <li><a href="category.html">Wildlife Conservation</a></li>
+                                <li><a href="category.html">Animal Rescue and Rehabilitation</a></li>
+                                <li><a href="category.html">Endangered Species Awareness</a></li>
+                                <li><a href="category.html">Eco-Friendly Pet Care</a></li>
                             </ul>
-                        </li>
-                       
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
-                            <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="blog.html">Blog </a></li>
-                            </ul>
-                        </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="logIn.html">Login</a></li>
-                                <li><a href="contact_us.html"> Contact Us</a></li>
-                                <li><a href="ask_question.html"> Ask Question </a></li>
-                                <li><a href="post-deatils.html"> Post-Details </a></li>
-                                <li><a href="user.html">All User</a></li>
-                                <li><a href="user_question.html"> User Question </a></li>
-                                <li><a href="category.html"> Category </a></li>
-                                <li><a href="#"> 404 </a></li>
+                                <li><a href="ask_question.aspx"> 
+
+                                    </a></li>
+                                <li><a href="post-details.aspx"> Post-Details </a></li>
                             </ul>
                         </li>
-                        <li><a href="contact_us.html">Contact us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -100,10 +88,10 @@
     </div>
     <section class="header-descriptin329">
         <div class="container">
-            <h3>Ask Question</h3>
+            <h3>Forum</h3>
             <ol class="breadcrumb breadcrumb839">
                 <li><a href="#">Home</a></li>
-                <li class="active">Ask Question</li>
+                <li class="active">Start your post</li>
             </ol>
         </div>
     </section>
@@ -112,11 +100,11 @@
             <div class="row">
                 <div class="col-md-9">
                 <div class="ask-question-input-part032">
-                      <h4>Ask Question</h4>
+                      <h4>Start your post</h4>
                  <hr>
                     <form>
                     <div class="username-part940">
-                        <span class="form-description43">User name* </span><input type="text" name="fname" class="username029" placeholder="Enter your Name">  
+                        <span class="form-description43">Username* </span><input type="text" name="fname" class="username029" placeholder="Enter your Name">  
  </div>
  <div class="email-part320">
      <span class="form-description442">E-Mail* </span><input type="text" name="fname" class="email30" placeholder="Enter Your Email">  
@@ -130,16 +118,16 @@
         <label>
 <input list="browsers" name="myBrowser" class="list-category53"/></label>
 <datalist id="browsers">
-  <option value="Front_End Web Developer">
-  <option value="Back-End develoer">
-  <option value="Andriod Developer">
-  <option value="Web Application">
-  <option value="System Analyst">
-  <option value="Security">
+  <option value="Wildlife Conservation">Wildlife Conservation</option>
+  <option value="Animal Rescue and Rehabilitation">Animal Rescue and Rehabilitation</option>
+  <option value="Endangered Species Awareness">Endangered Species Awareness</option>
+  <option value="Eco-Friendly Pet Care">Eco-Friendly Pet Care</option>
+  <option value="Veteranian">Veteranian</option>
+
 </datalist>
     </div>
     <div class="button-group-addfile3239">
-        <span class="form-description23993">Attactment*</span><input type="file" name="ffile" class="question-ttile3226">
+        <span class="form-description23993">Attachment*</span><input type="file" name="ffile" class="question-ttile3226">
         
     </div>
        <div class="details2-239">
@@ -162,75 +150,20 @@
 <!--           strart col-md-3 (side bar)-->
            <aside class="col-md-3 sidebar97239">
              <div class="status-part3821">
-            <h4>stats</h4>
+            <h4>Forum's Stats</h4>
                 
-                 <a href="#"><i class="fa fa-question-circle" aria-hidden="true"> Question(20)</i></a>
-                 <i class="fa fa-comment" aria-hidden="true"> Answers(50)</i>
+                 <a href="#"><i class="fa fa-question-circle" aria-hidden="true"> Question(8)</i></a>
+                 <i class="fa fa-comment" aria-hidden="true"> Answers(35)</i>
              </div>  
              <div class="categori-part329">
                  <h4>Category</h4>
                  <ul>
-                     <li><a href="#">web developer</a></li>
-                     <li><a href="#">Andriod developer</a></li>
-                     <li><a href="#">grapics developer</a></li>
-                     <li><a href="#">web developer</a></li>
-                     
+                     <li><a href="#">Wildlife Conservation</a></li>
+                     <li><a href="#">Animal Rescue and Rehabilitation</a></li>
+                     <li><a href="#">Endangered Species Awareness</a></li>
+                     <li><a href="#">Eco-Friendly Pet Care</a></li>
                  </ul>
              </div>
-             
-<!--             social part -->
-              <div class="social-part2189">
-              <h4>Find us</h4>
-             <li class="rss-one">
-                <a href="#" target="_blank">
-                 <strong>
-                    <span>Subscribe</span>
-                     <i class="fa fa-rss" aria-hidden="true"></i>
-       
-                     <br>
-                     <small>To RSS Feed</small>
-                     
-                 </strong>
-                 </a>
-             </li>
-                       <li class="facebook-two">
-                <a href="#" target="_blank">
-                 <strong>
-                    <span>Subscribe</span>
-                         <i class="fa fa-facebook" aria-hidden="true"></i>
-       
-                     <br>
-                     <small>To Facebook Feed</small>
-                     
-                 </strong>
-                 </a>
-             </li>
-                                <li class="twitter-three">
-                <a href="#" target="_blank">
-                 <strong>
-                    <span>Subscribe</span>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-       
-                     <br>
-                     <small>To twitter Feed</small>
-                     
-                 </strong>
-                 </a>
-             </li>
-                                <li class="youtube-four">
-                <a href="#" target="_blank">
-                 <strong>
-                    <span>Subscribe</span>
-               <i class="fa fa-youtube" aria-hidden="true"></i>
-       
-                     <br>
-                     <small>To youtube Feed</small>
-                     
-                 </strong>
-                 </a>
-             </li>
-                  
-              </div>
               
 <!--              login part-->
               <div class="login-part2389">
@@ -241,7 +174,7 @@
                   </div>
                       <div class="input-group300">
                   <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                  <input type="password" class="passin309" placeholder="Name">
+                  <input type="password" class="passin309" placeholder="Password">
                   </div>
                   <a href="#"><button type="button" class="userlogin320">Log In</button></a>
                   <div class="rememberme">
@@ -260,8 +193,23 @@
                      </div>
                  </div>
                  <span class="points-details938">
-                     <a href="#"><h5>Ahmed Hasan</h5></a>
-                <a href="#" class="designetion439">Pundit</a>
+                     <a href="#"><h5>Yap Ming Shen</h5></a>
+                <a href="#" class="designetion439">Platinum member</a>
+                     <p>207 points</p>
+                 </span>
+                 
+                  </div>
+                  <hr>
+                           <div class="pints-wrapper">
+                 <div class="left-user3898">
+                     <a href="#"><img src="image/images.png" alt="Image"></a>
+                     <div class="imag-overlay39">
+                         <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                     </div>
+                 </div>
+                 <span class="points-details938">
+                     <a href="#"><h5>Yap Ming Shen</h5></a>
+                <a href="#" class="designetion439">Strategist</a>
                      <p>206 points</p>
                  </span>
                  
@@ -275,24 +223,9 @@
                      </div>
                  </div>
                  <span class="points-details938">
-                     <a href="#"><h5>Ahmed Hasan</h5></a>
-                <a href="#" class="designetion439">Pundit</a>
-                     <p>206 points</p>
-                 </span>
-                 
-                  </div>
-                  <hr>
-                           <div class="pints-wrapper">
-                 <div class="left-user3898">
-                     <a href="#"><img src="image/images.png" alt="Image"></a>
-                     <div class="imag-overlay39">
-                         <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                     </div>
-                 </div>
-                 <span class="points-details938">
-                     <a href="#"><h5>Ahmed Hasan</h5></a>
-                <a href="#" class="designetion439">Pundit</a>
-                     <p>206 points</p>
+                     <a href="#"><h5>Yap Ming Shen</h5></a>
+                <a href="#" class="designetion439">Senior</a>
+                     <p>205 points</p>
                  </span>
                  
                   </div>
@@ -305,9 +238,9 @@
                      </div>
                  </div>
                  <span class="points-details938">
-                     <a href="#"><h5>Ahmed Hasan</h5></a>
-                <a href="#" class="designetion439">Pundit</a>
-                     <p>206 points</p>
+                     <a href="#"><h5>Yap Ming Shen</h5></a>
+                <a href="#" class="designetion439">Basic Member</a>
+                     <p>204 points</p>
                  </span>
                  
                   </div>
@@ -320,9 +253,9 @@
                      </div>
                  </div>
                  <span class="points-details938">
-                     <a href="#"><h5>Ahmed Hasan</h5></a>
-                <a href="#" class="designetion439">Pundit</a>
-                     <p>206 points</p>
+                     <a href="#"><h5>Yap Ming Shen</h5></a>
+                <a href="#" class="designetion439">Newcomer</a>
+                     <p>203 points</p>
                  </span>
                  
                   </div>
@@ -333,15 +266,15 @@
 <div class="tags-part2398">
     <h4>Tags</h4>
     <ul>
-        <li><a href="#">analytics</a></li>
-        <li><a href="#">Computer</a></li>
-        <li><a href="#">Developer</a></li>
-        <li><a href="#">Google</a></li>
-        <li><a href="#">Interview</a></li>
-        <li><a href="#">Programmer</a></li>
-        <li><a href="#">Salary</a></li>
-        <li><a href="#">University</a></li>
-        <li><a href="#">Employee</a></li>
+        <li><a href="#">Endangered Species</a></li>
+        <li><a href="#">Famous Animals in History</a></li>
+        <li><a href="#">Easy Wildlife Gardening</a></li>
+        <li><a href="#">Animal Fun Facts</a></li>
+        <li><a href="#">Guide to Local Wildlife</a></li>
+        <li><a href="#">Understanding Animal Behavior</a></li>
+        <li><a href="#">How to Help Endangered Species</a></li>
+        <li><a href="#">Animals and Their Habitats</a></li>
+        <li><a href="#">Nature Walks and Animal Spotting</a></li>
         
     </ul>
     
@@ -351,23 +284,24 @@
 <!--        start recent post  -->
 <div class="recent-post3290">
     <h4>Recent Post</h4>
-    <div class="post-details021">
-        <a href="#"><h5>How much do web developers</h5></a>
-        <p>I am thinking of pursuing web developing as a career & was ...</p>
-        <small style="color: #848991">July 16, 2017</small>
-    </div>
-    <hr>
         <div class="post-details021">
-        <a href="#"><h5>How much do web developers</h5></a>
-        <p>I am thinking of pursuing web developing as a career & was ...</p>
-        <small style="color: #848991">July 16, 2017</small>
-    </div>
-       <hr>
+            <a href="#"><h5>Discovering the Secret Lives of Urban Wildlife</h5></a>
+            <p>Exploring how city-dwelling animals adapt to urban environments and what we can learn from them.</p>
+            <small style="color: #848991">February 14, 2024</small>
+        </div>
+        <hr>
         <div class="post-details021">
-        <a href="#"><h5>How much do web developers</h5></a>
-        <p>I am thinking of pursuing web developing as a career & was ...</p>
-        <small style="color: #848991">July 16, 2017</small>
+            <a href="#"><h5>The Importance of Bees in Our Ecosystem</h5></a>
+            <p>Understanding the crucial role bees play in pollination and how we can support their populations.</p>
+            <small style="color: #848991">April 26, 2024</small>
+        </div>
+        <hr>
+        <div class="post-details021">
+            <a href="#"><h5>How to Create a Wildlife-Friendly Backyard</h5></a>
+            <p>Simple steps to make your garden a haven for local wildlife, from bird feeders to native plants.</p>
+            <small style="color: #848991">June 5, 2024</small>
     </div>
+
     
     
 </div>
@@ -403,27 +337,21 @@
                 
                 <div class="col-md-3">
                   <div class="info-part-one320">
-                   <h4>Where We Are ?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi adipiscing gravida odio, sit amet suscipit risus ultrices eu.</p>
-                    <h4>Address :</h4>
-                    <p>Ask Me Network, 33 Street, syada<br> Zeinab, Cairo, Egypt.</p>
+                   <h4>Who We Are ?</h4>
+                    <p>3 Degree Students striving for animals' future</p>
+                    <h4>Slogan :</h4>
+                    <p>For Animals by Animals</p>
                     <h4>Support :</h4>
-                    <p>Support Telephone No : (+2)01111011110</p>
-                    <p>Support Email Account : </p>
-                    <p>info@example.com</p>
+                    <p>Support Telephone No : (+60)109055328</p>
+                    <p>Support Email Account : vincentyap2k@gmail.com</p>
                     </div>
                 </div>
                    <div class="col-md-3">
                   <div class="info-part-two320">
               <h4>Quick Links</h4>
                    <a href="#"><p>-Home</p></a>
-                     <a href="#"><p>-Ask Question</p></a>
-                     <a href="#"><p>-Questions</p></a>
-                     <a href="#"><p>-Users</p></a>
-                     <a href="#"><p>-Edit Profile</p></a>
-                     <a href="#"><p>-Page</p></a>
-                     <a href="#"><p>-Contact Us</p></a>
-                     <a href="#"><p>-Buy now</p></a>
+                     <a href="#"><p>-Question</p></a>
+                     <a href="#"><p>-Animagraphy's Forum</p></a>
                     </div>
                 </div>
                    <div class="col-md-3">
@@ -431,44 +359,24 @@
                    <h4>Popular Questions</h4>
                   <div class="news-info209">
                   
-                   <h5>Why are the British confused</h5>
-                    <p>(Why I darest say, they darest not get offended when they so ...</p>
-                    <small>July 16, 2017</small>
+                   <h5>The Rediscovery of the Tasmanian Tiger</h5>
+                    <p>Scientists in Australia have reported sightings of the Tasmanian Tiger, thought to be extinct since 1936. New drone footage in Tasmania's remote wilderness suggests a small population has survived undetected.</p>
+                    <small>February 13, 2024</small>
                       </div>
                        <div class="news-info209">
-                <h5>How to approach applying for</h5>
-                    <p>(I am trying to find/change my career trajectory. Its a good cozy ...</p>
-                    <small>July 16, 2017</small>
+                <h5>Breakthrough in Coral Reef Restoration</h5>
+                    <p>Researchers in the Great Barrier Reef have developed a coral planting technique that accelerates growth by 50%. </p>
+                    <small>December 11, 2023</small>
                       </div>
                         <div class="news-info209">
-                <h5>How to evaluate whether a</h5>
-                    <p>A friend of mine is the CEO of his own small business. ...</p>
-                    <small>July 16, 2017</small>
+                <h5>Elephants' New Communication Method Discovered</h5>
+                    <p>Scientists have discovered that elephants use infrasonic sound waves to communicate over long distances.</p>
+                    <small>July 16, 2023</small>
                       </div>
                     
                     </div>
                 </div>
-                   <div class="col-md-3">
-                  <div class="info-part-four320">
-                   <h4>Latest Tweets</h4>
-                   <div class="tweet-details29">
-                    <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                     Themehttps://t.co/urb3LgsOCi</a></p>
-                     <small>about 2 weeks ago</small>
-                      </div>
-                            <div class="tweet-details29">
-                    <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                     Themehttps://t.co/urb3LgsOCi</a></p>
-                     <small>about 2 weeks ago</small>
-                      </div>
-                            <div class="tweet-details29">
-                    <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                     Themehttps://t.co/urb3LgsOCi</a></p>
-                     <small>about 2 weeks ago</small>
-                      </div>
-                
-                    </div>
-                </div>
+      
             </div>
         </div>
     </section>
@@ -476,18 +384,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p>Copyright 2017 Ask me | <strong>Sudo  Coder</strong></p>
-            </div>
-             <div class="col-md-6">
-              <div class="social-right2389">
-               <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-               <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
-                 </div>
+                <p>Copyright 2024 Animagraphy | <strong>Animagraphy Group 19</strong></p>
             </div>
         </div>
     </div>

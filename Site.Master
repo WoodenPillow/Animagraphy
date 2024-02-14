@@ -26,9 +26,9 @@
                 <div class="col-md-6">
                     <div class="navbar-menu-left-side239">
                         <ul>
-                            <li><a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="\10Registration\Registration.aspx" target="_blank"><i class="fa fa-headphones" aria-hidden="true"></i>Register</a></li>
+                            <li><a href="\9Login\Login.aspx" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,19 +59,26 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="ask_question.html">Forum</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="2Forum\forum.aspx">Forum</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question Category<span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="2Forum\post.aspx"> Post-Questions </a></li>
                                 <li><a href="2Forum\forum.aspx">Animal Fun Facts</a></li>
                                 <li><a href="2Forum\forum.aspx">Wildlife ConservationL</a></li>
                                 <li><a href="2Forum\forum.aspx">Animal Rescue and Rehabilitation</a></li>
                                 <li><a href="2Forum\forum.aspx">Endangered Species Awarenest</a></li>
                                 <li><a href="2Forum\forum.aspx">Eco-Friendly Pet Care</a></li>
                             </ul>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page<span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="2Forum\post.aspx"> Post-Questions </a></li>
+                                <li><a href="\3WorldMap\worldmap.aspx"> WorldMap </a></li>
+                                <li><a href="\4Ranking\resources\ranking.aspx"> Leaderboard </a></li>
+                                <li><a href="\5Dictionary\A-Z Dictionary.aspx"> Dictionary </a></li>
+                                <li><a href="\6TableSearch\Table Search.aspx"> Table Search </a></li>
+                                <li><a href="\7Matching\Matching.aspx"> Matching </a></li>
+
                             </ul>
                     </ul>
                 </div>
@@ -83,7 +90,7 @@
 <!--===breadcrumb=====-->
     <section class="header-descriptin329">
         <div class="container">
-            <h3>Blog</h3>
+            <h3>Home</h3>
             <ol class="breadcrumb breadcrumb839">
                 <li><a href="#">Home</a></li>
                 <li class="active">News</li>
@@ -100,27 +107,45 @@
                         <div class="blog-details3902">
                             <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
                             <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
+                            <div class="ques-icon-info2933"> 
+                                <a href="#"><i class="fa fa-user" aria-hidden="true">Yap Ming Shen</i></a> 
+                                <a href="#"><i class="fa fa-calendar" aria-hidden="true">14 February, 2024</i></a> 
+                                <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> 
+                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 56 comments</i></a> 
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"> 1,452 views</i></a> </div>
                             <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
+                            <div class="continue-deatils738"> 
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
                         </div>
                     </div>
                     <div class="blog-part3903"> <img src="image/blog-3-806x440.jpg" alt="Image" class="img-responsive">
                         <div class="blog-details3902">
                             <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
                             <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
+                            <div class="ques-icon-info2933"> 
+                                <a href="#"><i class="fa fa-user" aria-hidden="true">Yap Ming Shenn</i></a> 
+                                <a href="#"><i class="fa fa-calendar" aria-hidden="true"> August 8, 2023</i></a> 
+                                <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> 
+                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 38 comments</i></a> 
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"> 2,115 views</i></a> </div>
                             <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
+                            <div class="continue-deatils738"> 
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
                         </div>
                     </div>
                     <div class="blog-part3903"> <img src="image/blog-4-806x440.jpg" alt="Image" class="img-responsive">
                         <div class="blog-details3902">
                             <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Introducing Keyboard Shortcuts, our first Labs feature</h3>
                             <hr>
-                            <div class="ques-icon-info2933"> <a href="#"><i class="fa fa-user" aria-hidden="true"> Ahmed Hasan</i></a> <a href="#"><i class="fa fa-calendar" aria-hidden="true"> July 21, 2017</i></a> <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 2 comments</i></a> <a href="#"><i class="fa fa-eye" aria-hidden="true"> 179 viwes</i></a> </div>
+                            <div class="ques-icon-info2933"> 
+                                <a href="#"><i class="fa fa-user" aria-hidden="true">Yap Ming Shen</i></a> 
+                                <a href="#"><i class="fa fa-calendar" aria-hidden="true"> October 26, 2023</i></a> 
+                                <a href="#"><i class="fa fa-briefcase" aria-hidden="true"> work</i></a> 
+                                <a href="#"><i class="fa fa-comments-o" aria-hidden="true"> 82 comments</i></a> 
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"> 3,749 views</i></a> </div>
                             <p>We want to make it easier to learn more about a question and highlight key facts about it — such as how popular the question is, how many people are interested in it, and who the audience is. To accomplish ...</p>
-                            <div class="continue-deatils738"> <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
+                            <div class="continue-deatils738"> 
+                                <a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a> </div>
                         </div>
                     </div>
                     <nav aria-label="Page navigation">
@@ -131,8 +156,6 @@
                             <li><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
                             <li>
                                 <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
                             </li>
@@ -189,7 +212,7 @@
                  </div>
                  <span class="points-details938">
                      <a href="#"><h5>Yap Ming Shen</h5></a>
-                <a href="#" class="designetion439">Platinum member</a>
+                     <a href="#" class="designetion439">Platinum member</a>
                      <p>207 points</p>
                  </span>
                  
@@ -204,7 +227,7 @@
                  </div>
                  <span class="points-details938">
                      <a href="#"><h5>Yap Ming Shen</h5></a>
-                <a href="#" class="designetion439">Strategist</a>
+                     <a href="#" class="designetion439">Strategist</a>
                      <p>206 points</p>
                  </span>
                  
@@ -219,7 +242,7 @@
                  </div>
                  <span class="points-details938">
                      <a href="#"><h5>Yap Ming Shen</h5></a>
-                <a href="#" class="designetion439">Senior</a>
+                     <a href="#" class="designetion439">Senior</a>
                      <p>205 points</p>
                  </span>
                  
@@ -234,7 +257,7 @@
                  </div>
                  <span class="points-details938">
                      <a href="#"><h5>Yap Ming Shen</h5></a>
-                <a href="#" class="designetion439">Basic Member</a>
+                     <a href="#" class="designetion439">Basic Member</a>
                      <p>204 points</p>
                  </span>
                  
@@ -249,7 +272,7 @@
                  </div>
                  <span class="points-details938">
                      <a href="#"><h5>Yap Ming Shen</h5></a>
-                <a href="#" class="designetion439">Newcomer</a>
+                     <a href="#" class="designetion439">Newcomer</a>
                      <p>203 points</p>
                  </span>
                  
@@ -393,8 +416,10 @@
                $("#txtEditor").Editor();
            });
        </script>
+
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
+
 </body>
 
 </html>

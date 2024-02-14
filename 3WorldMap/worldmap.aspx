@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://www.webglearth.com/v2/api.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>Country Identifier</title>
+    <title>WorldMap With Animals</title>
     <script>
         const makeNastyTableFromObject = (jsonObject, elementName) => {
             let tableString = "<table><tr>"

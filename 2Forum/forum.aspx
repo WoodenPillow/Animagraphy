@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Ask online Form">
+    <meta name="title" content="Animagraphy's Forum">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, nofollow">
@@ -27,9 +27,9 @@
                 <div class="col-md-6">
                     <div class="navbar-menu-left-side239">
                         <ul>
-                            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
-                            <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
-                            <li><a href="logIn.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="\10Registration\Registration.aspx"><i class="fa fa-headphones" aria-hidden="true"></i>Register</a></li>
+                            <li><a href="\9Login\Login.aspx"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,10 +63,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="site.Master">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="forum.aspx">Forum</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question Category<span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="post.aspx"> Post-Questions </a></li>
                                 <li><a href="forum.aspx">Animal Fun Facts</a></li>
                                 <li><a href="forum.aspx">Wildlife ConservationL</a></li>
                                 <li><a href="forum.aspx">Animal Rescue and Rehabilitation</a></li>
@@ -76,7 +77,12 @@
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="post.aspx"> Post-Questions </a></li>
+                                <li><a href="\2Forum\post.aspx"> Post-Questions </a></li>
+                                <li><a href="\3WorldMap\worldmap.aspx"> WorldMap </a></li>
+                                <li><a href="\4Ranking\resources\ranking.aspx"> Leaderboard </a></li>
+                                <li><a href="\5Dictionary\A-Z Dictionary.aspx"> Dictionary </a></li>
+                                <li><a href="\6TableSearch\Table Search.aspx"> Table Search </a></li>
+                                <li><a href="\7Matching\Matching.aspx"> Matching </a></li>
                             </ul>
                     </ul>
                 </div>

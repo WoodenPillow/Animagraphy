@@ -128,8 +128,6 @@
     <Content Include="2Forum\post.aspx" />
     <Content Include="2Forum\forum.aspx" />
     <Content Include="3WorldMap\Animagraphy-circled.png" />
-    <Content Include="3WorldMap\index.aspx" />
-    <Content Include="3WorldMap\index.css" />
     <Content Include="3WorldMap\worldmap.aspx" />
     <Content Include="3WorldMap\worldmap.css" />
     <Content Include="4Ranking\resources\css\Fonts\GD Fonts\Fonts GD.txt" />

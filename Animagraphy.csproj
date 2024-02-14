@@ -684,12 +684,17 @@
     <Content Include="4Ranking\ressources\fontawesome\svgs\regular\circle-right.svg" />
     <Content Include="4Ranking\ressources\fontawesome\svgs\regular\circle-stop.svg" />
     <Content Include="4Ranking\ressources\fontawesome\svgs\regular\circle-up.svg" />
+    <Content Include="5Dictionary\A-Z Dictionary.aspx" />
+    <Content Include="5Dictionary\Images\A.jpg" />
+    <Content Include="5Dictionary\bg.jpg" />
     <Content Include="About.aspx" />
     <Content Include="App_Code\Main_Page.aspx" />
     <Content Include="App_Data\AnimaDB.mdf" />
     <Content Include="App_Data\AnimaDB_log.ldf">
       <DependentUpon>AnimaDB.mdf</DependentUpon>
     </Content>
+    <Content Include="5Dictionary\Images\B.jpg" />
+    <Content Include="5Dictionary\Images\C.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -708,9 +713,26 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="5Dictionary\Images\D.jpg" />
     <Content Include="Default.aspx" />
+    <Content Include="5Dictionary\DictionaryStyleSheet.css" />
+    <Content Include="5Dictionary\Images\E.jpg" />
+    <Content Include="5Dictionary\Images\F.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="5Dictionary\Images\G.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="5Dictionary\Images\H.jpg" />
+    <Content Include="5Dictionary\Images\I.jpg" />
+    <Content Include="5Dictionary\Images\J.jpg" />
+    <Content Include="5Dictionary\Images\K.jpg" />
+    <Content Include="5Dictionary\Images\L.jpg" />
+    <Content Include="5Dictionary\Images\M.jpg" />
+    <Content Include="5Dictionary\Images\N.jpg" />
+    <Content Include="5Dictionary\Images\O.jpg" />
+    <Content Include="5Dictionary\Images\P.jpg" />
+    <Content Include="5Dictionary\Images\Q.jpg" />
+    <Content Include="5Dictionary\Images\R.jpg" />
+    <Content Include="5Dictionary\Images\S.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -834,6 +856,13 @@
     <Content Include="4Ranking\ressources\fontawesome\scss\_sizing.scss" />
     <Content Include="4Ranking\ressources\fontawesome\scss\_stacked.scss" />
     <Content Include="4Ranking\ressources\fontawesome\scss\_variables.scss" />
+    <Content Include="5Dictionary\Images\T.jpg" />
+    <Content Include="5Dictionary\Images\U.jpg" />
+    <Content Include="5Dictionary\Images\V.jpg" />
+    <Content Include="5Dictionary\Images\W.jpg" />
+    <Content Include="5Dictionary\Images\X.jpg" />
+    <Content Include="5Dictionary\Images\Y.jpg" />
+    <Content Include="5Dictionary\Images\Z.jpg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -868,6 +897,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="5Dictionary\A-Z Dictionary.aspx.cs">
+      <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5Dictionary\A-Z Dictionary.aspx.designer.cs">
+      <DependentUpon>A-Z Dictionary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">
       <DependentUpon>Main_Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

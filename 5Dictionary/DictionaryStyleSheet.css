@@ -1,0 +1,65 @@
+﻿.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 3px solid #04AA6D;
+}
+
+.button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.animal-info {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    width: 400px; /* Set the width */
+    max-height: 400px; /* Set the max height */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    position: fixed; /* Position the container */
+    top: 60%; /* Position from top */
+    left: 38%; /* Position from left */
+    transform: translate(-50%, -50%); /* Center the container */
+    z-index: 999; /* Ensure the container is above other elements */
+}
+
+.animal-image {
+    margin-top: 20px; /* Adjust the margin to create space between the two containers */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    width: 300px; /* Set the width */
+    max-height: 300px; /* Set the max height */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+    position: fixed; /* Position the container */
+    top: 60%; /* Position from top, adjust the value based on the height of animal info container */
+    left: 70%; /* Position from left */
+    transform: translate(-50%, -50%); /* Center the container horizontally */
+    z-index: 999; /* Ensure the container is above other elements */
+}
+
+.animal-info, .animal-image {
+    opacity: 0; /* Start with opacity 0 to make them initially invisible */
+    transition: opacity 0.5s ease; /* Add transition effect for opacity */
+}
+
+.animal-info.show, .animal-image.show {
+    opacity: 1; /* Change opacity to 1 to make them visible */
+}

@@ -17,7 +17,7 @@ namespace WAPP_Assignment
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username AND Password = @password";
+                string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username AND password = @password";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@username", login_username.Value);
                 cmd.Parameters.AddWithValue("@password", login_pwd.Value);

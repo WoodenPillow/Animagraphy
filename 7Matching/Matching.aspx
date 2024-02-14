@@ -31,43 +31,43 @@
         <div class="animal-images">
             <!-- Almond Moth -->
             <img id="almondMothImage" src="Images/AlmondMoth.jpg" alt="Almond Moth" style="display: none;" />
-            <div id="almondMothLabel" class="image-label">Almond Moth (Common Household Pets)</div>
+            <div id="almondMothLabel" class="image-label">Almond Moth (Common Household Pests)</div>
 
             <!-- Dampwood Termite -->
             <img id="dampwoodTermiteImage" src="Images/DampwoodTermite.jpg" alt="Dampwood Termite" style="display: none;" />
-            <div id="dampwoodTermiteLabel" class="image-label">Dampwood Termite (Common Household Pets)</div>
+            <div id="dampwoodTermiteLabel" class="image-label">Dampwood Termite (Common Household Pests)</div>
 
             <!-- Field Mice -->
             <img id="fieldMiceImage" src="Images/FieldMice.jpg" style="display: none;" alt="Field Mice (Common Household Pets)" />
-            <div id="fieldMiceLabel" class="image-label">Field Mice (Common Household Pets)</div>
+            <div id="fieldMiceLabel" class="image-label">Field Mice (Common Household Pests)</div>
 
             <!-- Fire Ant -->
             <img id="fireAntImage" src="Images/FireAnt.jpg" style="display: none;" alt="Fire Ant  (Common Household Pets)" />
-            <div id="fireAntLabel" class="image-label">Fire Ant (Common Household Pets)</div>
+            <div id="fireAntLabel" class="image-label">Fire Ant (Common Household Pests)</div>
 
             <!-- Fruit Flies -->
             <img id="fruitFliesImage" src="Images/FruitFlies.jpg" style="display: none;" alt="Fruit Flies  (Common Household Pets)" />
-            <div id="fruitFliesLabel" class="image-label">Fruit Flies (Common Household Pets)</div>
+            <div id="fruitFliesLabel" class="image-label">Fruit Flies (Common Household Pests)</div>
 
             <!-- House Centipedes -->
             <img id="houseCentipedesImage" src="Images/HouseCentipedes.jpg" style="display: none;" alt="House Centipedes  (Common Household Pets)" />
-            <div id="houseCentipedesLabel" class="image-label">House Centipedes (Common Household Pets)</div>
+            <div id="houseCentipedesLabel" class="image-label">House Centipedes (Common Household Pests)</div>
 
             <!-- Indianmeal Moth -->
             <img id="indianmealMothImage" src="Images/IndianmealMoth.jpg" style="display: none;" alt="Indianmeal Moth  (Common Household Pets)" />
-            <div id="indianmealMothLabel" class="image-label">Indianmeal Moth (Common Household Pets)</div>
+            <div id="indianmealMothLabel" class="image-label">Indianmeal Moth (Common Household Pests)</div>
 
             <!-- Maize Weevil -->
             <img id="maizeWeevilImage" src="Images/MaizeWeevil.jpg" style="display: none;" alt="Maize Weevil  (Common Household Pets)" />
-            <div id="maizeWeevilLabel" class="image-label">Maize Weevil (Common Household Pets)</div>
+            <div id="maizeWeevilLabel" class="image-label">Maize Weevil (Common Household Pests)</div>
 
             <!-- Silverfish -->
             <img id="silverfishImage" src="Images/Silverfish.jpg" style="display: none;" alt="Silverfish  (Common Household Pets)" />
-            <div id="silverfishLabel" class="image-label">Silverfish (Common Household Pets)</div>
+            <div id="silverfishLabel" class="image-label">Silverfish (Common Household Pests)</div>
 
             <!-- Wood Rats -->
             <img id="woodRatsImage" src="Images/WoodRats.jpg" style="display: none;" alt="Wood Rats  (Common Household Pets)" />
-            <div id="woodRatsLabel" class="image-label">Wood Rats (Common Household Pets)</div>
+            <div id="woodRatsLabel" class="image-label">Wood Rats (Common Household Pests)</div>
 
             <!-- African Elephant -->
             <img id="AfricanElephantImage" src="Images/AfricanElephant.jpg" style="display: none;" alt="African Elephant (Existing Animal)" />

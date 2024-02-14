@@ -135,7 +135,6 @@
     <Content Include="3WorldMap\Animagraphy-circled.png" />
     <Content Include="3WorldMap\index.aspx" />
     <Content Include="3WorldMap\index.css" />
-    <Content Include="3WorldMap\index.html" />
     <Content Include="3WorldMap\worldmap.aspx" />
     <Content Include="3WorldMap\worldmap.css" />
     <Content Include="4Ranking\index.html" />
@@ -917,6 +916,7 @@
     </Compile>
     <Compile Include="2Forum\blog.aspx.cs">
       <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="2Forum\blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>

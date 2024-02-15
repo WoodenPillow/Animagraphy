@@ -21,9 +21,6 @@ namespace WAPP_Assignment
                 {
                     con.Open();
 
-                    // Debugging statement: Output connection string for verification
-                    Console.WriteLine("Connection string: " + connectionString);
-
                     // Query to check if the username and password match
                     string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username AND password = @password";
 
@@ -41,6 +38,7 @@ namespace WAPP_Assignment
                         {
                             string userType = "";
                             SqlCommand cmdType = new SqlCommand("SELECT usertype FROM [dbo].[userTable] WHERE username = @username", con);
+                            cmdType.Parameters.AddWithValue("@username", username);
                             SqlDataReader dr = cmdType.ExecuteReader();
 
                             while (dr.Read())
@@ -52,8 +50,8 @@ namespace WAPP_Assignment
                                 }
                             }
 
-                            // Debugging statement: Output userType for verification
-                            Console.WriteLine("User type: " + userType);
+                            Session["UserType"] = userType;
+                            Session["UserName"] = username;
 
                             // Redirect users based on their user type
                             if (userType == "admin")

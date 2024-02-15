@@ -16,25 +16,13 @@ namespace WAPP_Assignment
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    con.Open();
-
-                    string username = this.username.Text.Trim();
-                    if (string.IsNullOrEmpty(username))
-                    {
-                        throw new Exception("Username cannot be empty.");
-                    }
-
-                    // Validate email format
-                    if (!IsValidEmail(email.Text))
-                    {
-                        throw new Exception("Invalid email format.");
-                    }
+                    con.Open(); 
 
                     string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@username", username);
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        cmd.Parameters.AddWithValue("@username", username);
 
                         if (count > 0)
                         {
@@ -44,6 +32,12 @@ namespace WAPP_Assignment
                         }
                         else
                         {
+                            // Validate email format
+                            if (!IsValidEmail(email.Text))
+                            {
+                                throw new Exception("Invalid email format.");
+                            }
+
                             string insertQuery = "INSERT INTO [dbo].[userTable] ([fname], [lname], [gender], [interestedTopic], [email], [username], [password], [usertype]) VALUES (@firstName, @lastName, @gender, @interestedTopic, @email, @username, @password, @usertype)";
                             using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
                             {

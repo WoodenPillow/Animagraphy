@@ -27,7 +27,7 @@
             <div class="forgot-password">
                 <a href="#">Forgot password?</a>
             </div>
-            <button id="Button1" type="submit" class="btn" form="form1" runat="server">Login</button>
+            <asp:Button runat="server" id="Button1" OnClick="Button1_Click" type="submit" class="btn" Text="Login" />
             <div class="register-link">
                 <p>Don't have an account? <a href="/10Registration/Registration.aspx">Register</a></p>
             </div>

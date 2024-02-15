@@ -36,16 +36,16 @@ namespace WAPP_Assignment
 
                         if (count > 0)
                         {
-                            // If the user exists, retrieve their user type
-                            string userTypeQuery = "SELECT usertype FROM [dbo].[userTable] WHERE username = @username";
-                            cmd.CommandText = userTypeQuery;
-
                             string userType = "";
-                            using (SqlDataReader dr = cmd.ExecuteReader())
+                            SqlCommand cmdType = new SqlCommand("SELECT usertype FROM [dbo].[userTable] WHERE username = @username", con);
+                            SqlDataReader dr = cmdType.ExecuteReader();
+
+                            while (dr.Read())
                             {
-                                while (dr.Read())
+                                if (!dr.IsDBNull(dr.GetOrdinal("usertype"))) // Check if the column is not null
                                 {
                                     userType = dr["usertype"].ToString().Trim();
+                                    break; // Exit the loop once userType is assigned
                                 }
                             }
 
@@ -76,6 +76,7 @@ namespace WAPP_Assignment
                 // Display error message if an exception occurs
                 ShowErrorMessage("An error occurred: " + ex.Message);
             }
+
         }
 
         private void ShowErrorMessage(string message)

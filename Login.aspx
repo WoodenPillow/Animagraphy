@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WAPP_Assignment.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WAPP_Assignment.Login" ViewStateMode="Enabled" %>
 
 <!DOCTYPE html>
 
@@ -17,11 +17,11 @@
         <form id="form1" runat="server">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" id="login_username" placeholder="Username" required="required" runat="server" />
+                <input type="text" id="login_username" placeholder="Username" required="required" runat="server"/>
                 <box-icon type='solid' name='user'></box-icon>
             </div>
             <div class="input-box">
-                <input type="password" id="login_pwd" placeholder="Password" required="required" runat="server" />
+                <input type="password" id="login_pwd" placeholder="Password" required="required" runat="server" enableviewstate="True"/>
                 <box-icon name='lock-alt'></box-icon>
             </div>
             <div class="forgot-password">
@@ -29,11 +29,11 @@
             </div>
             <button id="Button1" type="submit" class="btn" form="form1" runat="server">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="../10Registration/Registration.aspx">Register</a></p>
+                <p>Don't have an account? <a href="/10Registration/Registration.aspx">Register</a></p>
             </div>
-            <asp:Label Style="text-align: center" ID="prompt" runat="server" Visible="False">errMsg</asp:Label>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>
+            <asp:Label Style="text-align: center" ID="prompt" runat="server" Text="[errorMsg]" Visible="False"></asp:Label>
         </form>
     </div>
-    </body>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>
+</body>
 </html>

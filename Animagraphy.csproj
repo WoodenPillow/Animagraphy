@@ -717,9 +717,9 @@
     <Content Include="7Matching\Images\Silverfish.jpg" />
     <Content Include="7Matching\Images\WoodRats.jpg" />
     <Content Include="8AdminDashboard\AdminDashboard.aspx" />
-    <Content Include="9Login\Login.aspx" />
-    <Content Include="9Login\login.css" />
-    <Content Include="9Login\login_bg.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="login.css" />
+    <Content Include="login_bg.jpg" />
     <Content Include="About.aspx" />
     <Content Include="App_Code\Main_Page.aspx" />
     <Content Include="5Dictionary\Images\B.jpg" />
@@ -1009,11 +1009,11 @@
     <Compile Include="8AdminDashboard\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="9Login\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="9Login\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Main_Page.aspx.cs">

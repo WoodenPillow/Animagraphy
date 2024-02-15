@@ -60,6 +60,7 @@ namespace WAPP_Assignment
                             Response.Redirect("~/9Login/Login.aspx");
                         }
                     }
+                    con.Close();
                 }
             }
             catch (Exception)

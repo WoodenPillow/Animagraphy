@@ -21,6 +21,9 @@ namespace WAPP_Assignment
                 {
                     con.Open();
 
+                    // Debugging statement: Output connection string for verification
+                    Console.WriteLine("Connection string: " + connectionString);
+
                     // Query to check if the username and password match
                     string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username AND password = @password";
 
@@ -49,6 +52,9 @@ namespace WAPP_Assignment
                                 }
                             }
 
+                            // Debugging statement: Output userType for verification
+                            Console.WriteLine("User type: " + userType);
+
                             // Redirect users based on their user type
                             if (userType == "admin")
                             {
@@ -66,25 +72,32 @@ namespace WAPP_Assignment
                         else
                         {
                             ShowErrorMessage("Invalid username or password!");
+                            return;
                         }
                     }
                     con.Close();
                 }
             }
+            catch (SqlException ex)
+            {
+                // SQL-specific exception handling
+                ShowErrorMessage("A SQL error occurred: " + ex.Message);
+                return;
+            }
             catch (Exception ex)
             {
                 // Display error message if an exception occurs
                 ShowErrorMessage("An error occurred: " + ex.Message);
+                return;
             }
-
         }
 
         private void ShowErrorMessage(string message)
         {
-            // Helper method to display error message
-            prompt.Visible = true;
-            prompt.ForeColor = System.Drawing.Color.Red;
-            prompt.Text = message;
+            // Display error message to the user
+            errorMessageLabel.Text = message;
+            errorMessageLabel.Visible = true;
         }
+
     }
 }

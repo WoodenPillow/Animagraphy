@@ -31,7 +31,7 @@
             <div class="register-link">
                 <p>Don't have an account? <a href="/10Registration/Registration.aspx">Register</a></p>
             </div>
-            <asp:Label Style="text-align: center" ID="prompt" runat="server" Visible="False"></asp:Label>
+            <asp:Label ID="errorMessageLabel" runat="server" ForeColor="Red" Visible="false"></asp:Label>
         </form>
     </div>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [userTable]"></asp:SqlDataSource>

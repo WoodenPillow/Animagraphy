@@ -51,13 +51,13 @@ namespace WAPP_Assignment
         protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
 
         /// <summary>
-        /// prompt control.
+        /// errorMessageLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label prompt;
+        protected global::System.Web.UI.WebControls.Label errorMessageLabel;
 
         /// <summary>
         /// SqlDataSource1 control.

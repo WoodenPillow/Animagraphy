@@ -60,7 +60,7 @@ namespace WAPP_Assignment
                             }
                             else if (userType == "member")
                             {
-                                Response.Redirect("~/7Matching/Matching.aspx");
+                                Response.Redirect("~/Site.Master");
                             }
                             else
                             {

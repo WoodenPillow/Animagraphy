@@ -38,7 +38,13 @@ namespace WAPP_Assignment
                                 throw new Exception("Invalid email format.");
                             }
 
-                            string insertQuery = "INSERT INTO [dbo].[userTable] ([fname], [lname], [gender], [interestedTopic], [email], [username], [password], [usertype]) VALUES (@firstName, @lastName, @gender, @interestedTopic, @email, @username, @password, @usertype)";
+                            string insertQuery = @" 
+                                INSERT INTO [dbo].[userTable] ([fname], [lname], [gender], [interestedTopic], [email], [username], [password], [usertype]) 
+                                VALUES (@firstName, @lastName, @gender, @interestedTopic, @email, @username, @password, @usertype);
+
+                                INSERT INTO [dbo].[leaderboard] ([name], [points], [learningHours]) 
+                                VALUES (@name, 0, 0);"; // Set points and learning hours to 0 for the new user
+
                             using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
                             {
                                 insertCmd.Parameters.AddWithValue("@firstName", fname.Text);
@@ -48,7 +54,8 @@ namespace WAPP_Assignment
                                 insertCmd.Parameters.AddWithValue("@email", email.Text);
                                 insertCmd.Parameters.AddWithValue("@username", username.Text);
                                 insertCmd.Parameters.AddWithValue("@password", pwd.Text);
-                                insertCmd.Parameters.AddWithValue("@usertype", "member"); 
+                                insertCmd.Parameters.AddWithValue("@usertype", "member");
+                                insertCmd.Parameters.AddWithValue("@name", fname.Text + " " + lname.Text); // Concatenate first name and last name
                                 insertCmd.ExecuteNonQuery();
                             }
                             Response.Redirect("~/Login.aspx");

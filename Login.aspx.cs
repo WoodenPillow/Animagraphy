@@ -54,11 +54,11 @@ namespace WAPP_Assignment
                             Session["UserName"] = username;
 
                             // Redirect users based on their user type
-                            if (userType == "admin")
+                            if (userType == "Admin")
                             {
                                 Response.Redirect("~/8AdminDashboard/AdminDashboard.aspx");
                             }
-                            else if (userType == "member")
+                            else if (userType == "Member")
                             {
                                 Response.Redirect("~/HomePage.aspx");
                             }

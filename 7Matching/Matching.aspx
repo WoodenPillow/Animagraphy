@@ -26,6 +26,9 @@
                 <input class="range" type="range" name="" min="0" max="10" value="0" id="slider3" onchange="rangeSlide('slider3', this.value)" onmousemove="rangeSlide('slider3', this.value)" oninput="updateSliderTrackColor(this)" />
                 <span id="animalHeight" class="range-value">0</span>
             </div>
+            <p>
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Font-Bold="True" Text="Back"/>
+            </p>
         </form>
 
         <div class="animal-images">
@@ -344,6 +347,8 @@
         // Hide all labels initially
         hideAllLabels();
     </script>
+
+    
 
 </body>
 </html>

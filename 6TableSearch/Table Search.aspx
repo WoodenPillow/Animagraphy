@@ -69,7 +69,7 @@
             position: absolute;
             top: 0;
             left: 100%;
-            width: 100px; /* Adjust width as needed */
+            width: 100px; 
             visibility: hidden;
         }
 
@@ -107,7 +107,7 @@
         <div class="container">
             <h1>Animal Table Search</h1>
             <div class="search-container">
-                <input type="text" placeholder="Search..." id="searchInput" runat="server"/>
+                <input type="text" placeholder="Search..." id="searchInput" runat="server" onkeypress="handleKeyPress(event)"/>
                 <button type="button" onclick="search()">Search</button>
             </div>
             <div id="tableContainer" runat="server">
@@ -168,6 +168,13 @@
                     }
                     
                     tr[i].style.display = found ? "" : "none";
+                }
+            }
+
+            function handleKeyPress(event) {
+                if (event.keyCode === 13) { // 13 is the keycode for Enter key
+                    event.preventDefault(); // Prevent default form submission behavior
+                    search(); // Call the search function
                 }
             }
         </script>

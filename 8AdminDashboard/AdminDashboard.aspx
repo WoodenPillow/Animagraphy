@@ -124,12 +124,13 @@
     <form id="form1" runat="server">
         <header>
             <h1>Welcome to the Admin Dashboard</h1>
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click"/>
         </header>
         <nav>
             <ul>
                 <li><a href="#personal-info">Modify Personal Information</a></li>
                 <li><a href="#user-details">Review Users' Details</a></li>
-                <li><a href="#user-management">Manage User Inquiries, Roles, and Permissions</a></li>
+                <li><a href="#animal-management">Edit Table Search Animal Data</a></li>
                 <li><a href="#dashboard-customization">Customize and Personalize Dashboard</a></li>
             </ul>
         </nav>
@@ -140,36 +141,33 @@
                     <span class="toggle-icon" onclick="toggleSection('personal-info')"></span>
                 </h2>
                 <div class="section-content">
-                    <!-- Form to modify personal information -->
-                    <div id="profileForm">
-                        <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" required="required"/>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required="required"/>
-
-                        <label for="phoneNumber">Phone Number:</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber"/>
-
-                        <label for="profilePicture">Profile Picture:</label>
-                        <input type="file" id="profilePicture" name="profilePicture"/>
-
-                        <button type="button" onclick="saveProfileChanges()">Save Changes</button>
+                    <asp:Label ID="Label2" runat="server" Text="UserName:"></asp:Label>
+                    <asp:DropDownList ID="uname" runat="server" AutoPostBack="True" OnSelectedIndexChanged="uname_SelectedIndexChanged">
+                    </asp:DropDownList>
+                    <asp:Label ID="Label3" runat="server" Text="First Name: "></asp:Label>
+                    <asp:TextBox ID="fname" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label4" runat="server" Text="Last Name:"></asp:Label>
+                    <asp:TextBox ID="lname" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label5" runat="server" Text="Gender"></asp:Label>
+                    <asp:DropDownList ID="gender" runat="server" OnSelectedIndexChanged="gender_SelectedIndexChanged">
+                        <asp:ListItem Value="M">Male</asp:ListItem>
+                        <asp:ListItem Value="F">Female</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:Label ID="Label6" runat="server" Text="Interested Topic:"></asp:Label>
+                    <asp:DropDownList ID="interestedTopic" runat="server" OnSelectedIndexChanged="interestedtopic_SelectedIndexChanged">
+                        <asp:ListItem Value="Common Household Pests">Common Household Pests</asp:ListItem>
+                        <asp:ListItem Value="Existing Animals">Existing Animals</asp:ListItem>
+                        <asp:ListItem Value="Extinct Animals">Extinct Animals</asp:ListItem>
+                        <asp:ListItem Value="Ancient Animals">Ancient Animals</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:Label ID="Label7" runat="server" Text="Email: "></asp:Label>
+                    <asp:TextBox ID="email" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label8" runat="server" Text="Password: "></asp:Label>
+                    <asp:TextBox ID="pwd" runat="server"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Save" />
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Remove" />
+                    <asp:Label ID="usertype" runat="server" Text="member" Visible="False"></asp:Label>
                     </div>
-
-                    <div id="passwordForm">
-                        <label for="currentPassword">Current Password:</label>
-                        <input type="password" id="currentPassword" name="currentPassword" required="required"/>
-
-                        <label for="newPassword">New Password:</label>
-                        <input type="password" id="newPassword" name="newPassword" required="required"/>
-
-                        <label for="confirmPassword">Confirm New Password:</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required="required"/>
-
-                        <button type="button" onclick="changePassword()">Change Password</button>
-                    </div>
-                </div>
             </section>
             <section id="user-details">
                 <h2>Review Users' Details
@@ -183,48 +181,57 @@
                                 <th>Username</th>
                                 <th>Email</th>
                                 <th>Role</th>
-                                <th>Registration Date</th>
+                                <th>Gender</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>User1</td>
-                                <td>user1@example.com</td>
-                                <td>Admin</td>
-                                <td>2024-02-14</td>
-                            </tr>
-                            <!-- Add more rows for other users -->
+                            <asp:Repeater ID="userRepeater" runat="server">
+                                <ItemTemplate>
+                                    <tr>
+                                        <td style="padding-right: 10px; text-align: center;"><%# Eval("username") %></td>
+                                        <td style="padding-right: 10px; text-align: center;"><%# Eval("email") %></td>
+                                        <td style="padding-right: 10px; text-align: center;"><%# Eval("userType") %></td>
+                                        <td style="padding-right: 10px; text-align: center;"><%# Eval("gender") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </tbody>
                     </table>
                 </div>
             </section>
-            <section id="user-management">
-                <h2>Manage User Inquiries, Roles, and Permissions
-                 <span class="toggle-icon" onclick="toggleSection('user-management')"></span>
+            <section id="animal-management">
+                <h2>Edit Table Search Animal Data
+                 <span class="toggle-icon" onclick="toggleSection('animal-management')"></span>
                 </h2>
                 <div class="section-content">
                     <!-- Forms or tables to manage user inquiries, roles, and permissions -->
-                    <section id="user-inquiries">
-                        <h3>User Inquiries</h3>
-                        <!-- Add elements for managing user inquiries -->
-                        <p>View user inquiries here...</p>
-                        <button onclick="viewUserInquiries()">View Inquiries</button>
+                    <section id="add-animal">
+                        <h3>Add animal data</h3>
+                        <asp:Label ID="addLabel1" runat="server" Text="Animal Name:"></asp:Label>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:Label ID="addLabel2" runat="server" Text="Scientific Name:"></asp:Label>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:Label ID="addLabel3" runat="server" Text="Ecosystem:"></asp:Label>
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <asp:Label ID="addLabel4" runat="server" Text="Life Status:"></asp:Label>
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                        <asp:Button ID="addButton1" runat="server" OnClick="addButton1_Click" Text="Add" />
+                        <asp:Label ID="errMsg" runat="server" Text="errMsg" Visible="False"></asp:Label>
                     </section>
-        
-                    <!-- User Roles Section -->
-                    <section id="user-roles">
-                        <h3>User Roles</h3>
-                        <!-- Add elements for managing user roles -->
-                        <p>View user roles here...</p>
-                        <button onclick="manageUserRoles()">Manage Roles</button>
-                    </section>
-        
-                    <!-- User Permissions Section -->
-                    <section id="user-permissions">
-                        <h3>User Permissions</h3>
-                        <!-- Add elements for managing user permissions -->
-                        <p>Manage user permissions here...</p>
-                        <button onclick="manageUserPermissions()">Manage Permissions</button>
+
+                    <section id="edit-animal">
+                        <h3>Edit animal data</h3>
+                        <asp:Label ID="editLabel1" runat="server" Text="Animal Name:"></asp:Label>
+                        <asp:DropDownList ID="animalname" runat="server" AutoPostBack="True" OnSelectedIndexChanged="animalname_SelectedIndexChanged">
+                        </asp:DropDownList>
+                        <asp:Label ID="editLabel2" runat="server" Text="Scientific Name: "></asp:Label>
+                        <asp:TextBox ID="scientificname" runat="server"></asp:TextBox>
+                        <asp:Label ID="editLabel3" runat="server" Text="Ecosystem: "></asp:Label>
+                        <asp:TextBox ID="ecosystem" runat="server"></asp:TextBox>
+                        <asp:Label ID="editLabel4" runat="server" Text="Life Status: "></asp:Label>
+                        <asp:TextBox ID="lifestatus" runat="server"></asp:TextBox>
+                        <asp:Button ID="editButton1" runat="server" OnClick="editButton1_Click" Text="Save" />
+                        <asp:Button ID="editButton2" runat="server" OnClick="editButton2_Click" Text="Remove" />
                     </section>
                     </div>
             </section>

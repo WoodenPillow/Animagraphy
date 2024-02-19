@@ -54,7 +54,7 @@ namespace WAPP_Assignment
                                 insertCmd.Parameters.AddWithValue("@email", email.Text);
                                 insertCmd.Parameters.AddWithValue("@username", username.Text);
                                 insertCmd.Parameters.AddWithValue("@password", pwd.Text);
-                                insertCmd.Parameters.AddWithValue("@usertype", "member");
+                                insertCmd.Parameters.AddWithValue("@usertype", "Member");
                                 insertCmd.Parameters.AddWithValue("@name", fname.Text + " " + lname.Text); // Concatenate first name and last name
                                 insertCmd.ExecuteNonQuery();
                             }

@@ -137,7 +137,8 @@
             </div>
             <div class="back-button">
                 <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" />
-            </div>kj
+            </div>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT * FROM [Animals]"></asp:SqlDataSource>
         </div>
 
         <script>

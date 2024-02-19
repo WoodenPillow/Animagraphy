@@ -60,7 +60,7 @@ namespace WAPP_Assignment
                             }
                             else if (userType == "member")
                             {
-                                Response.Redirect("~/2Forum/Forum.aspx");
+                                Response.Redirect("~/HomePage.aspx");
                             }
                             else
                             {

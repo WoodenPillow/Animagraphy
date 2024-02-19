@@ -16,13 +16,13 @@ namespace WAPP_Assignment
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    con.Open(); 
+                    con.Open();
 
                     string query = "SELECT COUNT(*) FROM [dbo].[userTable] WHERE username = @username";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        cmd.Parameters.AddWithValue("@username", username.Text);
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
-                        cmd.Parameters.AddWithValue("@username", username);
 
                         if (count > 0)
                         {
@@ -46,23 +46,22 @@ namespace WAPP_Assignment
                                 insertCmd.Parameters.AddWithValue("@gender", gender.SelectedValue);
                                 insertCmd.Parameters.AddWithValue("@interestedTopic", interestedTopic.SelectedValue);
                                 insertCmd.Parameters.AddWithValue("@email", email.Text);
-                                insertCmd.Parameters.AddWithValue("@username", username);
+                                insertCmd.Parameters.AddWithValue("@username", username.Text);
                                 insertCmd.Parameters.AddWithValue("@password", pwd.Text);
                                 insertCmd.Parameters.AddWithValue("@usertype", "member"); 
                                 insertCmd.ExecuteNonQuery();
                             }
-                            Response.Redirect("~/9Login/Login.aspx");
+                            Response.Redirect("~/Login.aspx");
                         }
                     }
-                    con.Close();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // Display an error message to the user
+                // Log the exception or display a user-friendly error message
                 prompt.Visible = true;
                 prompt.ForeColor = System.Drawing.Color.Red;
-                prompt.Text = "Registration failed!";
+                prompt.Text = "Registration failed: " + ex.Message;
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Web;
 
@@ -32,10 +33,11 @@ namespace WAPP_Assignment
                         }
                         else
                         {
-                            // Validate email format
-                            if (!IsValidEmail(email.Text))
+                            if (!ValidateEmail(email.Text))
                             {
-                                throw new Exception("Invalid email format.");
+                                prompt.Text = "Invalid email format!";
+                                prompt.Visible = true;
+                                return;
                             }
 
                             string insertQuery = @" 
@@ -72,17 +74,11 @@ namespace WAPP_Assignment
             }
         }
 
-        protected bool IsValidEmail(string email)
+        private bool ValidateEmail(string email)
         {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
+            // Use a robust email validation regex
+            string emailRegex = @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+            return Regex.IsMatch(email, emailRegex);
         }
 
         protected void Page_Load(object sender, EventArgs e)
